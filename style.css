@@ -1,0 +1,182 @@
+/* ========== Variabili ========== */
+
+:root{
+  --bg:#fbf6ee;--card:#fffdf9;--text:#23303a;--muted:#6b7780;--line:#eadfce;
+  --ink:#1f3a4d;--accent:#e4572e;--soft:#f6ece0;--star:#f0a000;--mark:#ffe08a;
+  --radius:18px;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#141c24;--card:#1d2833;--text:#eef1f4;--muted:#9fb0bf;--line:#2c3947;
+        --ink:#eaf1f7;--accent:#ff7a57;--soft:#243241;--star:#ffbe3d;--mark:#6b5513;}
+}
+
+/* ========== Base ========== */
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:0 18px}
+
+/* ========== Intestazione ========== */
+
+.top{position:sticky;top:0;z-index:10;background:var(--bg);padding:18px 0 12px;border-bottom:1px solid var(--line)}
+.hero { display: flex; align-items: flex-end; gap: 22px; }
+.hero svg { flex: none; height: clamp(28px, 9vw, 44px); width: auto; }
+@media (max-width:500px){
+  .hero{gap:12px}
+  .hero img{width:46px;height:auto}
+  h1{max-width:9em}
+}
+.kicker{margin:0;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+h1{margin:2px 0 0;font:700 1.9rem/1.05 Georgia,"Iowan Old Style","Times New Roman",serif;color:var(--ink);letter-spacing:-.01em}
+h1 span{font-style:italic;font-weight:400;color:var(--accent)}
+
+/* Ricerca e schede Tutte/Preferite */
+
+.search{margin-top:14px}
+#q{width:100%;padding:12px 16px;border:1.5px dashed var(--line);border-radius:999px;background:var(--card);color:var(--text);font-size:1rem}
+#q:focus{outline:none;border:1.5px solid var(--accent)}
+.tabs{display:inline-flex;margin-top:12px;background:var(--soft);border-radius:999px;padding:3px}
+.tab{border:0;background:transparent;color:var(--muted);padding:7px 16px;border-radius:999px;font-size:.9rem;font-weight:600;cursor:pointer}
+.tab.active{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+
+/* Accesso (visibile solo se Supabase è attivo) */
+
+.auth{font-size:.8rem;text-align:right;margin-left:auto;align-self:flex-start}
+.auth button{border:1.5px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:6px 12px;cursor:pointer;font-size:.8rem}
+.status{color:var(--muted);font-size:.88rem;margin:16px 2px 8px;min-height:1.2em}
+
+/* ========== pannello Login in piccolo (alto a dx) ========== */
+
+.auth .btn-login{display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer;
+  padding:8px 16px;border-radius:999px;font:600 .85rem/1 system-ui,sans-serif;color:#fff;
+  background:linear-gradient(135deg,#5ab4ff,#2f80ed);box-shadow:0 2px 8px rgba(47,128,237,.35);
+  transition:transform .15s,box-shadow .15s,filter .15s}
+.auth .btn-login:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(47,128,237,.45);filter:brightness(1.05)}
+.auth .btn-login:active{transform:none}
+.btn-login .av{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,.28);font-size:.72rem}
+.dlg{border:0;padding:0;border-radius:22px;background:var(--card);color:var(--text);width:min(92vw,380px);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.dlg::backdrop{background:rgba(10,20,35,.55);backdrop-filter:blur(3px)}
+.dlg form{padding:24px 22px 20px}
+.dlg h2{margin:0 0 6px;font:700 1.35rem/1.2 Georgia,"Times New Roman",serif;color:var(--ink)}
+.dlg-sub{margin:0 0 6px;color:var(--muted);font-size:.9rem}
+.dlg label{display:block;margin-top:12px;font-size:.78rem;font-weight:700;color:var(--muted)}
+.dlg input{display:block;width:100%;margin-top:6px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--bg);color:var(--text);font-size:16px}
+.dlg input:focus{outline:none;border-color:#2f80ed;box-shadow:0 0 0 3px rgba(47,128,237,.2)}
+.dlg-msg{min-height:1.3em;margin:12px 0 0;font-size:.85rem}
+.dlg-msg.err{color:#d6336c}
+.dlg-msg.ok{color:#1f9d6b}
+.dlg-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:14px}
+.btn-primary,.btn-ghost{border:0;cursor:pointer;padding:10px 18px;border-radius:999px;font:600 .9rem/1 system-ui,sans-serif}
+.btn-primary{color:#fff;background:linear-gradient(135deg,#5ab4ff,#2f80ed);box-shadow:0 2px 8px rgba(47,128,237,.35)}
+.btn-primary:disabled{opacity:.6;cursor:default}
+.btn-ghost{background:var(--soft);color:var(--text)}
+.dlg-switch{margin:16px 0 0;text-align:center;font-size:.85rem;color:var(--muted)}
+.link{border:0;background:none;padding:0;color:#2f80ed;font-weight:700;cursor:pointer}
+@media (prefers-color-scheme:dark){ .link{color:#7cc4ff} }
+
+
+/* ========== Schermata di login a tutto schermo (Login Obbligatorio) ========== */
+.dlg-brand{display:none}
+.dlg-kicker{margin:0;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.dlg-logo{margin:4px 0 0;font:700 1.9rem/1.1 Georgia,"Times New Roman",serif;color:var(--ink)}
+.dlg-logo em{font-style:italic;font-weight:400;color:var(--accent)}
+.dlg-logo img{width:46px;height:auto;vertical-align:middle;margin-left:6px;border-radius:6px}
+
+body.locked .top, body.locked main{visibility:hidden}
+body.locked #loginCancel{display:none}
+body.locked .dlg{
+  width:100vw;max-width:none;height:100dvh;max-height:none;border-radius:0;box-shadow:none;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(90,180,255,.38), transparent 45%),
+    radial-gradient(circle at 88% 92%, rgba(47,128,237,.30), transparent 50%),
+    var(--bg);
+}
+body.locked .dlg[open]{display:grid;place-items:center}
+body.locked .dlg form{
+  width:min(92vw,400px);background:var(--card);border-radius:24px;
+  padding:28px 24px 22px;box-shadow:0 18px 50px rgba(20,60,120,.22);
+}
+body.locked .dlg-brand{display:block;text-align:center;margin-bottom:18px}
+body.locked .dlg h2, body.locked .dlg-sub{text-align:center}
+body.locked .dlg-actions{display:block}
+body.locked .btn-primary{width:100%;padding:14px 18px;font-size:1rem}
+
+
+/* ========== Transizione login -> app (rete neurale) ========== */
+@keyframes dlgOut{to{opacity:0;transform:scale(1.03);filter:blur(6px)}}
+@keyframes formOut{to{opacity:0;transform:scale(.94);filter:blur(5px)}}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+body.locked .dlg[open] form{animation:rise .5s cubic-bezier(.2,.7,.2,1) both}
+body.locked .dlg.morph form{animation:formOut .5s ease forwards}
+.dlg.leaving{animation:dlgOut .6s ease forwards}
+
+.neural{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0;transition:opacity .5s ease}
+.neural.on{opacity:1}
+
+body.unveil .top, body.unveil main{visibility:visible}
+
+body.reveal .top, body.reveal .status{animation:fadeIn .5s ease both}
+body.reveal details.cat{animation:rise .55s cubic-bezier(.2,.7,.2,1) both}
+body.reveal details.cat:nth-child(1){animation-delay:.05s}
+body.reveal details.cat:nth-child(2){animation-delay:.11s}
+body.reveal details.cat:nth-child(3){animation-delay:.17s}
+body.reveal details.cat:nth-child(4){animation-delay:.23s}
+body.reveal details.cat:nth-child(5){animation-delay:.29s}
+body.reveal details.cat:nth-child(6){animation-delay:.35s}
+body.reveal details.cat:nth-child(7){animation-delay:.41s}
+body.reveal details.cat:nth-child(8){animation-delay:.47s}
+
+@media (prefers-reduced-motion:reduce){
+  .dlg.leaving, body.locked .dlg[open] form, body.locked .dlg.morph form,
+  body.reveal .top, body.reveal .status, body.reveal details.cat{animation:none}
+}
+
+/* ========== Sezioni espandibili ========== */
+
+details.cat{--c:var(--accent);background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin:12px 0;overflow:hidden;border-left:6px solid var(--c)}
+details.cat>summary{list-style:none;cursor:pointer;padding:16px;display:flex;align-items:center;gap:14px}
+details.cat>summary::-webkit-details-marker{display:none}
+.tile{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;font-size:1.3rem;background:color-mix(in srgb,var(--c) 16%,transparent);flex:none}
+.ttl{font-weight:700;color:var(--ink);line-height:1.25}
+.n{margin-left:auto;font-size:.78rem;font-weight:700;color:var(--c);background:color-mix(in srgb,var(--c) 14%,transparent);padding:2px 9px;border-radius:999px}
+details.cat>summary::after{content:"+";color:var(--muted);font-size:1.4rem;line-height:1;margin-left:4px}
+details.cat[open]>summary::after{content:"–"}
+.body{border-top:1px dashed var(--line);padding:4px 0 8px}
+.sub{margin:14px 18px 2px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--c);font-weight:700}
+details.cat{transition:transform .15s ease, box-shadow .15s ease}
+@media (hover:hover){
+  details.cat:hover{transform:translateY(-4px);box-shadow:0 4px 14px rgba(0,0,0,.10)}
+}
+details.cat>summary:hover .tile{background:color-mix(in srgb,var(--c) 24%,transparent)}
+
+/* ========== Frasi ========== */
+
+.item{padding:12px 18px;display:grid;grid-template-columns:1fr auto;gap:2px 8px}
+.item+.item{border-top:1px solid var(--line)}
+.sub+.item{border-top:0}
+.en{font-weight:700;font-size:1.06rem;color:var(--ink)}
+.it{grid-column:1;color:var(--text)}
+.ex{grid-column:1;margin-top:6px;padding:8px 12px;background:var(--soft);border-radius:12px;font-size:.92rem}
+.ex em{display:block;font-style:normal;font-weight:600}
+.ex span{color:var(--muted)}
+.note{grid-column:1/-1;margin-top:6px;font-size:.84rem;color:var(--muted)}
+.note::before{content:"💡 "}
+.acts{grid-column:2;grid-row:1/3;display:flex;gap:2px;align-items:flex-start}
+.ic{border:0;background:transparent;font-size:1.25rem;cursor:pointer;padding:5px 7px;border-radius:10px;color:var(--muted);line-height:1}
+.ic:hover{background:var(--soft)}
+.ic.on{color:var(--star)}
+mark{background:var(--mark);color:inherit;border-radius:3px;padding:0 1px}
+
+/* ========== Stati vuoti e piè di pagina ========== */
+
+.empty{text-align:center;color:var(--muted);padding:44px 10px}
+.foot{color:var(--muted);font-size:.78rem;text-align:center;margin:30px 0 44px}
+
+/* Tastiera virtuale App*/
+
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+#q:focus-visible{outline:none}

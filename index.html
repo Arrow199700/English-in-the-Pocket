@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>English in the Pocket</title>
+<meta name="description" content="Frasi inglesi di tutti i giorni, sempre a portata di mano.">
+<meta name="theme-color" content="#fbf6ee">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="hero">
+      <div class="brand">
+        <p class="kicker">Frasi di tutti i giorni</p>
+        <h1>English <span>in the</span> Pocket <img src="bandiera.svg" alt="Bandiera inglese" width="45" style="border-radius:8px;"></h1>
+      </div>
+      <div id="auth" class="auth" hidden>
+        <button>Login</button>
+      </div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Cerca in italiano o in inglese" autocomplete="off" aria-label="Cerca">
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tab-all" role="tab">Tutte</button>
+      <button class="tab" id="tab-fav" role="tab">★ Preferite <span id="favCount">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <p id="status" class="status" aria-live="polite"></p>
+  <div id="list"></div>
+  <p class="foot">Le traduzioni indicano il significato naturale nel contesto, non sempre la corrispondenza parola per parola.</p>
+</main>
+
+<!-- Dialog per login/registrazione (visibile solo se Supabase è attivo) -->
+<dialog id="loginDlg" class="dlg" aria-labelledby="loginTitle">
+  <form id="loginForm" novalidate>
+    <div class="dlg-brand">
+      <p class="dlg-kicker">Frasi di tutti i giorni</p>
+      <p class="dlg-logo">English <em>in the</em><br>Pocket <img src="bandiera.svg" alt=""></p>
+    </div>
+    <h2 id="loginTitle">Accedi</h2>
+    <p class="dlg-sub">Salva le tue frasi preferite e ritrovale su ogni dispositivo.</p>
+    <label>Email
+      <input id="loginEmail" type="email" inputmode="email" autocomplete="email" placeholder="nome@email.it" required>
+    </label>
+    <label>Password
+      <input id="loginPass" type="password" autocomplete="current-password" placeholder="Almeno 6 caratteri" minlength="6" required>
+    </label>
+    <p id="loginMsg" class="dlg-msg" aria-live="polite"></p>
+    <div class="dlg-actions">
+      <button type="button" id="loginCancel" class="btn-ghost">Annulla</button>
+      <button type="submit" id="loginSend" class="btn-primary">Accedi</button>
+    </div>
+    <p class="dlg-switch"><span id="switchTxt">Non hai un account?</span> <button type="button" id="loginSwitch" class="link">Registrati</button>
+      <br><button type="button" id="loginSkip" class="link" hidden>Continua senza account</button></p>
+  </form>
+</dialog>
+
+<!-- richiamo file di configurazione, dati e script -->
+<script src="config.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
