@@ -40,6 +40,14 @@ h1 span{font-style:italic;font-weight:400;color:var(--accent)}
 .tabs{display:inline-flex;margin-top:12px;background:var(--soft);border-radius:999px;padding:3px}
 .tab{border:0;background:transparent;color:var(--muted);padding:7px 16px;border-radius:999px;font-size:.9rem;font-weight:600;cursor:pointer}
 .tab.active{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.tabs{max-width:100%}
+@media (max-width:480px){.tab{padding:7px 12px;font-size:.85rem}}
+.tab{transition:background .15s ease,color .15s ease,transform .1s ease,box-shadow .15s ease}
+@media (hover:hover){
+  .tab:not(.active):hover{color:var(--ink);background:color-mix(in srgb,var(--card) 55%,transparent)}
+  .tab.active:hover{box-shadow:0 2px 6px rgba(0,0,0,.18)}
+  .tab:active{transform:scale(.95)}
+}
 
 /* Accesso (visibile solo se Supabase è attivo) */
 
@@ -152,6 +160,18 @@ details.cat{transition:transform .15s ease, box-shadow .15s ease}
   details.cat:hover{transform:translateY(-4px);box-shadow:0 4px 14px rgba(0,0,0,.10)}
 }
 details.cat>summary:hover .tile{background:color-mix(in srgb,var(--c) 24%,transparent)}
+/* Titoli dei gruppi dentro una sezione: fasce ben visibili */
+
+.sub{
+  margin:18px 0 0;
+  padding:10px 18px;
+  font-size:.82rem;
+  background:color-mix(in srgb,var(--c) 12%,transparent);
+  border-top:1px solid color-mix(in srgb,var(--c) 30%,transparent);
+  border-bottom:1px solid color-mix(in srgb,var(--c) 30%,transparent);
+}
+.body>.sub:first-child{margin-top:0;border-top:0}
+
 
 /* ========== Frasi ========== */
 

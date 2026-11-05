@@ -121,7 +121,13 @@ window.CATEGORIES = [
  ["Would you mind…?","Ti dispiacerebbe…?","Would you mind opening the window?","Ti dispiacerebbe aprire la finestra?","Dopo “mind” il verbo prende -ing."],
  ["Do you want me to…?","Vuoi che io…?","Do you want me to wait?","Vuoi che aspetti?"],
  ["Let me help you.","Lascia che ti aiuti. / Ti aiuto io."],
- ["Don't worry, I'll take care of it.","Non preoccuparti, me ne occupo io."]
+ ["Don't worry, I'll take care of it.","Non preoccuparti, me ne occupo io."],
+ ["I'll handle it.","Me ne occupo io.","Don't worry, I'll handle it.","Non preoccuparti, me ne occupo io.","“Handle” = gestire, occuparsi di qualcosa."],
+ ["Leave it to me.","Lascia fare a me.","Leave it to me. I'll call them.","Lascia fare a me. Li chiamo io."],
+ ["I can deal with it.","Ci penso io.","I can deal with the bank.","Ci penso io alla banca.","“Deal with” = affrontare, occuparsi di."],
+ ["Who's in charge of…?","Chi si occupa di…?","Who's in charge of the booking?","Chi si occupa della prenotazione?"],
+ ["Can I count on you?","Posso contare su di te?"],
+ ["You saved my life.","Mi hai salvato.","","","Informale: si dice anche per scherzo."]
 ]},
 { id:"passato", title:"Raccontare il passato", items:[
  ["I went to…","Sono andato a…","I went to a concert last night.","Ieri sera sono andato a un concerto.","go → went → gone"],
@@ -203,9 +209,6 @@ window.CATEGORIES = [
  ["Just to confirm, you want me to…, right?","Per conferma, vuoi che io…, giusto?"]
 ]},
 { id:"phrasal", title:"Phrasal verbs di tutti i giorni", items:[
- ["wake up","svegliarsi","I usually wake up at seven.","Di solito mi sveglio alle sette."],
- ["get up","alzarsi dal letto","I woke up at seven, but I got up at eight.","Mi sono svegliato alle sette, ma mi sono alzato alle otto."],
- ["go out","uscire (per svago)","Are you going out tonight?","Esci stasera?"],
  ["come over","passare da qualcuno","Do you want to come over later?","Ti va di passare da me più tardi?"],
  ["pick someone up","passare a prendere qualcuno","I'll pick you up at eight.","Passo a prenderti alle otto.","Con un pronome: pick me up (non “pick up me”)."],
  ["meet up","vedersi / incontrarsi","Let's meet up this weekend.","Vediamoci questo fine settimana."],
@@ -221,10 +224,24 @@ window.CATEGORIES = [
  ["figure out","capire / trovare la soluzione","I can't figure out how this works.","Non riesco a capire come funziona."],
  ["end up","finire per","We ended up staying home.","Alla fine siamo rimasti a casa."],
  ["run out of","finire / esaurire","We've run out of milk.","Abbiamo finito il latte."],
+ ["catch up","aggiornarsi / mettersi in pari","Let's catch up over coffee.","Aggiorniamoci davanti a un caffè.","Tra amici: raccontarsi cosa è successo di recente."],
+ ["show up","presentarsi / farsi vedere","He didn't show up.","Non si è presentato.","Informale."],
+ ["work out","funzionare / allenarsi","Don't worry, it'll work out.","Non preoccuparti, si sistemerà.","Significa anche “fare esercizio”: I work out three times a week."],
+ ["come up with","inventare / avere un'idea","She came up with a great idea.","Le è venuta un'ottima idea."],
+ ["check out","dare un'occhiata / lasciare l'hotel","Check out this song!","Ascolta questa canzone!","Informale."],
+ ["sort out","sistemare / risolvere","I need to sort out a few things.","Devo sistemare un paio di cose."],
+ ["set up","organizzare / configurare","Could you help me set up my phone?","Mi aiuti a configurare il telefono?"],
+ ["carry on","andare avanti","Sorry to interrupt. Please carry on.","Scusa se ti ho interrotto. Continua pure."],
+ ["drop by","fare un salto da qualcuno","Drop by whenever you like.","Fai un salto quando vuoi.","Informale."],
+ ["cut down on","ridurre","I'm trying to cut down on sugar.","Sto cercando di ridurre lo zucchero."],
+ ["hold on","aspettare un attimo","Hold on, I'll be right back.","Aspetta un attimo, torno subito.","Al telefono: resti in linea."],
  ["give up","rinunciare / mollare","Don't give up.","Non mollare."],
  ["put off","rimandare","Let's not put it off again.","Non rimandiamolo di nuovo."],
  ["bring up","tirare fuori un argomento","Why did you bring that up?","Perché hai tirato fuori quell'argomento?"],
- ["calm down","calmarsi","I need a minute to calm down.","Mi serve un minuto per calmarmi."]
+ ["calm down","calmarsi","I need a minute to calm down.","Mi serve un minuto per calmarmi."],
+ ["wake up","svegliarsi","I usually wake up at seven.","Di solito mi sveglio alle sette."],
+ ["get up","alzarsi dal letto","I woke up at seven, but I got up at eight.","Mi sono svegliato alle sette, ma mi sono alzato alle otto."],
+ ["go out","uscire (per svago)","Are you going out tonight?","Esci stasera?"],
 ]},
 { id:"collegare", title:"Collegare le idee", items:[
  ["because","perché","I'm staying home because I'm tired.","Resto a casa perché sono stanco."],
@@ -239,17 +256,72 @@ window.CATEGORIES = [
  ["instead","invece / in alternativa","Let's stay home instead.","Restiamo a casa, invece."],
  ["at least","almeno","At least we tried.","Almeno ci abbiamo provato."],
  ["besides","inoltre / e poi","It's too far. Besides, it's expensive.","È troppo lontano. E poi è caro."]
+]},
+{ id:"idiomi-quot", title:"Commentare E Conversare", items:[
+["Long story short, …","Per farla breve, …","Long story short, we missed the train.","Per farla breve, abbiamo perso il treno.","Si dice anche “to make a long story short”."],
+["It's a long story.","È una lunga storia.","","","Si usa per non entrare nei dettagli."],
+["Easier said than done.","Più facile a dirsi che a farsi."],
+["Better late than never.","Meglio tardi che mai."],
+["You can say that again!","Puoi dirlo forte!","It's freezing! — You can say that again!","Si gela! — Puoi dirlo forte!"],
+["Tell me about it.","Me lo dici a me! / Lo so bene.","","","Non significa “raccontamelo”: dai ragione a chi parla."],
+["I'm all ears.","Ti ascolto. / Sono tutto orecchi."],
+["Speak of the devil!","Parli del diavolo!","Speak of the devil! We were just talking about you.","Parli del diavolo! Stavamo parlando proprio di te.","Si dice quando la persona arriva proprio mentre si parla di lei."],
+["Fingers crossed.","Incrociamo le dita.","Fingers crossed for tomorrow!","Incrociamo le dita per domani!"]
+]},
+{ id:"idiomi-sit", title:"Descrivere situazioni", items:[
+["to sell like hot cakes","andare a ruba","Their new sneakers are selling like hot cakes.","Le loro nuove scarpe vanno a ruba."],
+["once in a blue moon","molto raramente","I only eat fast food once in a blue moon.","Mangio fast food molto raramente."],
+["a piece of cake","un gioco da ragazzi","The exam was a piece of cake.","L'esame era un gioco da ragazzi."],
+["to cost an arm and a leg","costare un occhio della testa","That car cost an arm and a leg.","Quell'auto è costata un occhio della testa."],
+["to be under the weather","non sentirsi in forma","I'm feeling a bit under the weather.","Non mi sento molto in forma.","Per malesseri leggeri: raffreddore, stanchezza."],
+["the last straw","la goccia che fa traboccare il vaso","When he forgot my birthday again, that was the last straw.","Quando si è dimenticato di nuovo del mio compleanno, è stata la goccia."],
+["in the middle of nowhere","in capo al mondo","Their house is in the middle of nowhere.","La loro casa è in capo al mondo."],
+["a blessing in disguise","una fortuna inaspettata","Losing that job was a blessing in disguise.","Perdere quel lavoro si è rivelato una fortuna."],
+["to get out of hand","sfuggire di mano","The party got out of hand.","La festa è sfuggita di mano."],
+["to be up in the air","essere ancora incerto","Our summer plans are still up in the air.","I nostri programmi per l'estate sono ancora incerti."]
+]},
+{ id:"idiomi-azioni", title:"Parlare Di Azioni E Comportamenti", items:[
+["to break the ice","rompere il ghiaccio","He told a joke to break the ice.","Ha fatto una battuta per rompere il ghiaccio."],
+["to hit the nail on the head","centrare il punto","You hit the nail on the head.","Hai centrato il punto."],
+["to beat around the bush","girare intorno al problema","Stop beating around the bush and tell me.","Smettila di girarci intorno e dimmelo."],
+["to let the cat out of the bag","lasciarsi sfuggire un segreto","She let the cat out of the bag about the party.","Si è lasciata sfuggire il segreto sulla festa."],
+["to call it a day","chiuderla qui per oggi","It's late. Let's call it a day.","È tardi. Chiudiamola qui per oggi."],
+["to bite the bullet","stringere i denti e farlo","I hate the dentist, but I'll just bite the bullet.","Odio il dentista, ma stringerò i denti e ci andrò."],
+["to go the extra mile","fare uno sforzo in più","She always goes the extra mile for her clients.","Fa sempre uno sforzo in più per i suoi clienti."],
+["to keep an eye on","tenere d'occhio","Can you keep an eye on my bag?","Puoi tenere d'occhio la mia borsa?"],
+["to jump the gun","anticipare i tempi","Don't jump the gun. We haven't decided yet.","Non anticipare i tempi. Non abbiamo ancora deciso."],
+["to get cold feet","avere un ripensamento all'ultimo","He got cold feet before the wedding.","Ha avuto un ripensamento prima del matrimonio."],
+["to be on the same page","la pensiamo allo stesso modo","Let's make sure we're all on the same page.","Assicuriamoci di essere tutti sulla stessa lunghezza d'onda."],
+["The ball is in your court.","Tocca a te.","I've made my offer. The ball is in your court.","Ho fatto la mia offerta. Ora tocca a te."],
+["to kill two birds with one stone","prendere due piccioni con una fava","I'll post the letter on my way to work and kill two birds with one stone.","Imbuco la lettera andando al lavoro e prendo due piccioni con una fava."]
 ]}
 ];
 
-// Le 20 sotto-liste vengono raggruppate in 8 sezioni.
+// OLD
+/*
+    // Le 20 sotto-liste vengono raggruppate in 8 sezioni.
+    window.SECTIONS = [
+    { id:"parlare",  icon:"💬", title:"Parlare e conoscersi",            color:"#e4572e", groups:["sé","conoscere","rapporti"] },
+    { id:"uscite",   icon:"📅", title:"Uscite e programmi",              color:"#2a9d8f", groups:["proporre","accettare","futuro"] },
+    { id:"opinioni", icon:"❤️", title:"Gusti, emozioni e opinioni",      color:"#d6336c", groups:["gusti","opinioni"] },
+    { id:"volere",   icon:"🎯", title:"Volere, provare, chiedere aiuto", color:"#3b82c4", groups:["bisogni","provare","aiuto"] },
+    { id:"racconti", icon:"🕰️", title:"Raccontare e routine",            color:"#8e6bbf", groups:["passato","routine"] },
+    { id:"ingiro",   icon:"🧭", title:"In giro per il mondo",            color:"#e09f1f", groups:["viaggi","cibo","acquisti","problemi"] },
+    { id:"capire",   icon:"👂", title:"Capire e farsi capire",            color:"#1f7a5c", groups:["capire"] },
+    { id:"parole",   icon:"🧩", title:"Parole utili",                     color:"#5b6b7a", groups:["phrasal","collegare"] }
+    ];
+*/
+
 window.SECTIONS = [
- { id:"parlare",  icon:"💬", title:"Parlare e conoscersi",            color:"#e4572e", groups:["sé","conoscere","rapporti"] },
- { id:"uscite",   icon:"📅", title:"Uscite e programmi",              color:"#2a9d8f", groups:["proporre","accettare","futuro"] },
- { id:"opinioni", icon:"❤️", title:"Gusti, emozioni e opinioni",      color:"#d6336c", groups:["gusti","opinioni"] },
- { id:"volere",   icon:"🎯", title:"Volere, provare, chiedere aiuto", color:"#3b82c4", groups:["bisogni","provare","aiuto"] },
- { id:"racconti", icon:"🕰️", title:"Raccontare e routine",            color:"#8e6bbf", groups:["passato","routine"] },
- { id:"ingiro",   icon:"🧭", title:"In giro per il mondo",            color:"#e09f1f", groups:["viaggi","cibo","acquisti","problemi"] },
- { id:"capire",   icon:"👂", title:"Capire e farsi capire",            color:"#1f7a5c", groups:["capire"] },
- { id:"parole",   icon:"🧩", title:"Parole utili",                     color:"#5b6b7a", groups:["phrasal","collegare"] }
+ { id:"parlare",  icon:"💬", title:"Conversare e conoscersi",         color:"#e4572e", groups:["sé","conoscere","rapporti"] },
+ { id:"uscite",   icon:"📅", title:"Fare programmi",                  color:"#2a9d8f", groups:["proporre","accettare","futuro"] },
+ { id:"opinioni", icon:"❤️", title:"Gusti, opinioni e desideri",      color:"#d6336c", groups:["gusti","opinioni","bisogni"] },
+ { id:"racconti", icon:"🕰️", title:"Raccontare e spiegare",           color:"#8e6bbf", groups:["passato","routine","provare","collegare"] },
+ { id:"ingiro",   icon:"🧭", title:"Viaggi, ristoranti e acquisti",   color:"#e09f1f", groups:["viaggi","cibo","acquisti"] },
+ { id:"volere",   icon:"🆘", title:"Aiuto, imprevisti e chiarimenti", color:"#3b82c4", groups:["aiuto","problemi","capire"] },
+];
+
+window.SECTIONS_PHRASAL = [
+ { id:"idiomi",  icon:"🗣️", title:"Modi di dire - Idiomi",  color:"#5b6b7a", groups:["idiomi-quot","idiomi-sit","idiomi-azioni"] },
+ { id:"phrasal", icon:"🧩", title:"Phrasal verbs", color:"#1f7a5c", groups:["phrasal"] }
 ];

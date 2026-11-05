@@ -24,6 +24,47 @@ poi vai su http://localhost:8000
 3. Su GitHub: Settings -> Pages -> Build and deployment -> Source: Deploy from a branch -> Branch: `main`, cartella `/ (root)` -> Save.
 4. Dopo uno o due minuti il sito sarà all'indirizzo `https://TUOUSERNAME.github.io/english-in-the-pocket/`.
 
+## Come lavorare con Git
+
+**Idea di base:** `main` è la versione pubblica del sito. Per provare modifiche senza rischi si lavora su un ramo (branch) separato e poi lo si unisce a `main`.
+
+### Parole da conoscere
+
+| Parola | Significato |
+|---|---|
+| repository | La cartella del progetto con tutta la sua cronologia |
+| commit | Uno "scatto" salvato in locale, con un messaggio |
+| push | Invia i commit a GitHub |
+| pull | Scarica da GitHub le novità |
+| branch (ramo) | Una linea di lavoro separata da `main` |
+| pull request | Richiesta su GitHub per unire un branch a `main` |
+| merge | L'unione vera e propria dei due rami |
+
+### Flusso di lavoro
+
+1. Aggiorna `main`: `git switch main` poi `git pull origin main`
+2. Crea un branch: `git switch -c nome-del-ramo`
+3. Modifica i file e salva
+4. Controlla cosa è cambiato: `git status`
+5. Prepara e salva: `git add .` poi `git commit -m "Cosa ho fatto"`
+6. Invia il ramo: `git push -u origin nome-del-ramo` (le volte successive basta `git push`)
+7. Su GitHub apri la pull request verso `main`, controlla "Files changed" e unisci
+8. Torna in locale: `git switch main`, `git pull origin main`, `git branch -d nome-del-ramo`
+
+Il sito pubblico si aggiorna da solo (1-2 minuti) dopo l'unione in `main`.
+
+### In VS Code
+
+Pannello Controllo del codice sorgente (Ctrl+Shift+G): `+` prepara il file, il messaggio e la spunta fanno il commit, **Sync Changes** invia. La lettera accanto ai file è `M` (modificato), `A` (aggiunto), `U` (non ancora seguito).
+
+### Cose utili
+
+- Annullare una modifica non ancora salvata in un commit: `git restore nome-file`
+- Vedere la cronologia: `git log --oneline`
+- Nel file `.gitignore` si scrivono i file che Git deve ignorare (es. la vecchia versione `vecchio.html`)
+- Mai pubblicare chiavi segrete (`service_role`, `sb_secret`): nel repository pubblico sono leggibili da tutti
+- Prima di toccare più file insieme, fai `git status` per sapere sempre a che punto sei
+
 Il sito pubblicato è raggiungibile da chiunque abbia il link.
 
 ## Come aggiungere o modificare frasi
@@ -67,3 +108,9 @@ La chiave `anon` è fatta per essere pubblica: la protezione dei dati è affidat
 
 ## Nota sulle traduzioni
 Le traduzioni indicano il significato naturale nel contesto, non sempre la corrispondenza parola per parola.
+
+
+
+## Nuove modifiche applicabili
+
+- **Pulsanti-etichetta per saltare ai gruppi.** Se un giorno le frasi diventassero molte di più (diverse centinaia), una soluzione più comoda di un secondo livello di toggle sarebbe una fila di piccoli pulsanti-etichetta ("Organizzarsi", "Accettare", "Futuro") sotto la barra di ricerca, per saltare direttamente al gruppo. Con la quantità attuale (circa 230 frasi) sarebbe già troppo.

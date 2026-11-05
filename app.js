@@ -6,14 +6,27 @@
   var all = [];
   cats.forEach(function (c) {
     c.items.forEach(function (r, i) {
-      all.push({ id: c.id + "-" + (i + 1), cat: c.id, en: r[0], it: r[1], ex: r[2] || "", exIt: r[3] || "", note: r[4] || "" });
+      all.push({ id: c.id + "-" + (i + 1), cat: c.id, title: c.title, en: r[0], it: r[1], ex: r[2] || "", exIt: r[3] || "", note: r[4] || "" });
     });
   });
 
-  var sections = (window.SECTIONS || []).map(function (s) {
-    return { id: s.id, icon: s.icon, title: s.title, color: s.color,
-      groups: s.groups.map(function (g) { return cats.find(function (c) { return c.id === g; }); }).filter(Boolean) };
-  });
+  function buildSections(list) {
+    return (list || []).map(function (s) {
+      return {
+        id: s.id, icon: s.icon, title: s.title, color: s.color,
+        groups: s.groups.map(function (g) {
+          return cats.find(function (c) { return c.id === g; });
+        }).filter(Boolean)
+      };
+    });
+  }
+  var sectionsMain = buildSections(window.SECTIONS);
+  var sectionsPhrasal = buildSections(window.SECTIONS_PHRASAL);
+  function activeSections() {
+    if (view === "phrasal") return sectionsPhrasal;
+    if (view === "fav") return sectionsMain.concat(sectionsPhrasal);
+    return sectionsMain;
+  }
 
   var favs = new Set();
   try { JSON.parse(localStorage.getItem(LS_KEY) || "[]").forEach(function (x) { favs.add(x); }); } catch (e) {}
@@ -38,9 +51,11 @@
     if (view === "fav" && !favs.has(it.id)) return false;
     var q = norm(query).trim();
     if (!q) return true;
-    return norm(it.en + " " + it.it + " " + it.ex + " " + it.exIt).indexOf(q) >= 0;
+    var hay = it.en + " " + it.it + " " + it.ex + " " + it.exIt;
+    if (q.length >= 3) hay += " " + it.title;
+    return norm(hay).indexOf(q) >= 0;
   }
-
+  
   var canSpeak = "speechSynthesis" in window;
   function itemHTML(it) {
     var fav = favs.has(it.id);
@@ -59,6 +74,10 @@
   function render() {
     var searching = !!norm(query).trim();
     var html = "", total = 0;
+    var sections = activeSections();
+    var shown = sections.reduce(function (n, s) {
+      return n + s.groups.reduce(function (m, g) { return m + g.items.length; }, 0);
+    }, 0);
     sections.forEach(function (s) {
       var parts = "", count = 0;
       s.groups.forEach(function (g) {
@@ -81,12 +100,23 @@
     }
     listEl.innerHTML = html;
     statusEl.textContent = searching ? total + (total === 1 ? " risultato" : " risultati")
-      : (view === "fav" ? "" : all.length + " espressioni in " + sections.length + " sezioni");
+      : (view === "fav" ? "" : shown + " espressioni in " + sections.length + " sezioni");
     $("#favCount").textContent = favs.size;
   }
 
   listEl.addEventListener("toggle", function (e) {
-    var d = e.target; if (d.dataset && d.dataset.cat) openState[d.dataset.cat] = d.open;
+    var d = e.target;
+    if (!d.dataset || !d.dataset.cat) return;
+    if (norm(query).trim() || view === "fav") return;
+    if (d.open) {
+      openState = {};
+      openState[d.dataset.cat] = true;
+      listEl.querySelectorAll("details.cat[open]").forEach(function (o) {
+        if (o !== d) o.open = false;
+      });
+    } else {
+      openState[d.dataset.cat] = false;
+    }
   }, true);
 
   listEl.addEventListener("click", function (e) {
@@ -130,10 +160,14 @@
   $("#tab-fav").addEventListener("click", function () { setView("fav"); });
   function setView(v) {
     view = v;
-    $("#tab-all").classList.toggle("active", v === "all");
-    $("#tab-fav").classList.toggle("active", v === "fav");
+    ["all", "fav", "phrasal"].forEach(function (k) {
+      var b = document.getElementById("tab-" + k);
+      if (b) b.classList.toggle("active", v === k);
+    });
     render();
   }
+  var tabPhrasal = document.getElementById("tab-phrasal");
+  if (tabPhrasal) tabPhrasal.addEventListener("click", function () { setView("phrasal"); });
 
   // ---- accesso facoltativo (Supabase) ----
   var cfg = window.APP_CONFIG || {};
