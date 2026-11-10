@@ -28,44 +28,39 @@ poi vai su http://localhost:8000
 
 **Idea di base:** `main` è la versione pubblica del sito. Per provare modifiche senza rischi si lavora su un ramo (branch) separato e poi lo si unisce a `main`.
 
-### Parole da conoscere
+## Comandi Git di tutti i giorni
 
-| Parola | Significato |
-|---|---|
-| repository | La cartella del progetto con tutta la sua cronologia |
-| commit | Uno "scatto" salvato in locale, con un messaggio |
-| push | Invia i commit a GitHub |
-| pull | Scarica da GitHub le novità |
-| branch (ramo) | Una linea di lavoro separata da `main` |
-| pull request | Richiesta su GitHub per unire un branch a `main` |
-| merge | L'unione vera e propria dei due rami |
+### Il ciclo normale
 
-### Flusso di lavoro
+1. Modifica i file e provali in locale (Go Live in VS Code).
+2. Salva (Ctrl+S).
+3. `git status` per vedere cosa è cambiato.
+4. `git add .` per preparare i file.
+5. `git commit -m "Cosa ho fatto"` per salvare lo scatto sul computer.
+6. `git push` per inviarlo a GitHub: il sito si aggiorna in 1-2 minuti.
 
-1. Aggiorna `main`: `git switch main` poi `git pull origin main`
-2. Crea un branch: `git switch -c nome-del-ramo`
-3. Modifica i file e salva
-4. Controlla cosa è cambiato: `git status`
-5. Prepara e salva: `git add .` poi `git commit -m "Cosa ho fatto"`
-6. Invia il ramo: `git push -u origin nome-del-ramo` (le volte successive basta `git push`)
-7. Su GitHub apri la pull request verso `main`, controlla "Files changed" e unisci
-8. Torna in locale: `git switch main`, `git pull origin main`, `git branch -d nome-del-ramo`
+In VS Code i passi 4-6 sono: **+**, messaggio con la spunta, poi **Sync Changes**.
 
-Il sito pubblico si aggiorna da solo (1-2 minuti) dopo l'unione in `main`.
+### I comandi
 
-### In VS Code
+| Comando | Cosa fa | Quando |
+|---|---|---|
+| `git status` | Mostra i file modificati e se sei avanti rispetto a GitHub | Prima di ogni commit, o quando non sei sicuro |
+| `git add .` | Prepara tutti i file modificati per il commit | Prima di `commit` |
+| `git commit -m "…"` | Salva lo scatto in locale | Dopo `add` |
+| `git push` | Invia i commit a GitHub (pubblica) | Quando il lavoro è pronto |
+| `git pull origin main` | Scarica da GitHub le novità | Se hai modificato da un altro computer o dal sito di GitHub |
+| `git log --oneline` | Elenca i commit passati | Per vedere la cronologia |
+| `git restore nome-file` | Annulla le modifiche non ancora salvate in un commit | Se hai rotto un file e vuoi tornare indietro |
 
-Pannello Controllo del codice sorgente (Ctrl+Shift+G): `+` prepara il file, il messaggio e la spunta fanno il commit, **Sync Changes** invia. La lettera accanto ai file è `M` (modificato), `A` (aggiunto), `U` (non ancora seguito).
+### Cosa ricordarsi
 
-### Cose utili
-
-- Annullare una modifica non ancora salvata in un commit: `git restore nome-file`
-- Vedere la cronologia: `git log --oneline`
-- Nel file `.gitignore` si scrivono i file che Git deve ignorare (es. la vecchia versione `vecchio.html`)
-- Mai pubblicare chiavi segrete (`service_role`, `sb_secret`): nel repository pubblico sono leggibili da tutti
-- Prima di toccare più file insieme, fai `git status` per sapere sempre a che punto sei
-
-Il sito pubblicato è raggiungibile da chiunque abbia il link.
+- **Push = pubblicazione.** Finché non lo fai, nulla cambia per gli altri.
+- **Prova sempre prima in locale** e controlla in console (F12) che non ci siano errori.
+- **Dopo il push** aspetta 1-2 minuti e ricarica con Ctrl+F5. Sull'iPhone, chiudi e riapri la pagina.
+- **Nel repository pubblico** non vanno mai chiavi segrete (`service_role`, `sb_secret`). La chiave pubblica di Supabase in `config.js` va bene.
+- **Prima di modificare**, se hai toccato i file da un altro posto (altro PC o editor su GitHub), fai `git pull origin main`.
+- **Messaggi di commit** brevi e chiari (per esempio "Aggiungo modi di dire"): fra un mese ti servono per ritrovare cosa hai cambiato.
 
 ## Come aggiungere o modificare frasi
 Apri `data.js`. Le frasi sono raggruppate in sotto-liste (`CATEGORIES`); in fondo al file, `SECTIONS` le riunisce in 8 sezioni. Ogni frase ha questa forma:
