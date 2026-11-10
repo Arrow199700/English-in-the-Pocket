@@ -6,7 +6,7 @@
   var all = [];
   cats.forEach(function (c) {
     c.items.forEach(function (r, i) {
-      all.push({ id: c.id + "-" + (i + 1), cat: c.id, title: c.title, en: r[0], it: r[1], ex: r[2] || "", exIt: r[3] || "", note: r[4] || "" });
+      all.push({ id: c.id + "-" + (i + 1), cat: c.id, title: c.title, en: r[0], it: r[1], ex: r[2] || "", exIt: r[3] || "", note: r[4] || "", kw: r[5] || "" });
     });
   });
 
@@ -51,7 +51,7 @@
     if (view === "fav" && !favs.has(it.id)) return false;
     var q = norm(query).trim();
     if (!q) return true;
-    var hay = it.en + " " + it.it + " " + it.ex + " " + it.exIt;
+    var hay = it.en + " " + it.it + " " + it.ex + " " + it.exIt + it.kw;
     if (q.length >= 3) hay += " " + it.title;
     return norm(hay).indexOf(q) >= 0;
   }

@@ -20,7 +20,19 @@ window.CATEGORIES = [
  ["How do you know each other?","Come vi conoscete?"],
  ["What kind of music do you listen to?","Che genere di musica ascolti?"],
  ["Tell me more about it.","Raccontami qualcosa in più."],
- ["It was nice talking to you.","È stato un piacere parlare con te."]
+ ["It was nice talking to you.","È stato un piacere parlare con te."],
+ ["Hello! / Hi!","Ciao! / Salve!","Hello, nice to meet you.","Salve, piacere di conoscerti.","Hi è più informale."],
+ ["Good morning / afternoon / evening","Buongiorno / Buon pomeriggio / Buonasera","Good morning, how can I help?","Buongiorno, come posso aiutarla?"],
+ ["How are you?","Come stai?","Hi Anna, how are you?","Ciao Anna, come stai?"],
+ ["I'm fine, thanks. And you?","Bene, grazie. E tu?","How are you? — Fine, thanks. And you?","Come stai? — Bene, grazie. E tu?"],
+ ["Nice to meet you.","Piacere di conoscerti.","Nice to meet you, I'm Marco.","Piacere, sono Marco."],
+ ["What's your name?","Come ti chiami?","What's your name? — I'm Sara.","Come ti chiami? — Sono Sara."],
+ ["How old are you?","Quanti anni hai?","How old are you? — I'm thirty.","Quanti anni hai? — Ne ho trenta."],
+ ["Where are you from?","Di dove sei?","Where are you from? — I'm from Naples.","Di dove sei? — Sono di Napoli."],
+ ["Welcome!","Benvenuto!","Welcome to our home.","Benvenuto a casa nostra.","Anche: benvenuta / benvenuti."],
+ ["Goodbye! / Bye!","Arrivederci! / Ciao!","Goodbye, see you tomorrow!","Arrivederci, a domani!"],
+ ["Have a nice day!","Buona giornata!","Thanks, you too!","Grazie, altrettanto!"],
+ ["Good night","Buonanotte","Good night, sleep well.","Buonanotte, dormi bene.","Si dice solo quando si va a dormire."]
 ]},
 { id:"rapporti", title:"Rapporti e reazioni", items:[
  ["Thanks for…","Grazie per…","Thanks for helping me.","Grazie per avermi aiutato.","Dopo “thanks for” il verbo prende -ing."],
@@ -34,7 +46,16 @@ window.CATEGORIES = [
  ["Really?","Davvero?"],
  ["Fair enough.","Ci sta. / Capisco la tua ragione."],
  ["No worries.","Nessun problema.","","","Informale."],
- ["Same here.","Anche per me. / Anch'io.","","","Informale."]
+ ["Same here.","Anche per me. / Anch'io.","","","Informale."],
+ ["Good luck!","Buona fortuna!","Good luck with the exam!","Buona fortuna per l'esame!"],
+ ["Congratulations!","Congratulazioni! / Complimenti!","Congratulations on your new job!","Complimenti per il nuovo lavoro!"],
+ ["Happy birthday!","Buon compleanno!","Happy birthday! How old are you now?","Buon compleanno! Quanti anni compi?"],
+ ["She smiled at me.","Mi ha sorriso.","He has a lovely smile.","Ha un sorriso bellissimo.","","sorridere sorriso smile"],
+ ["I've cut all ties with him.","Ho chiuso ogni rapporto con lui.","They decided to cut ties.","Hanno deciso di chiudere i rapporti.","Cut ties = tagliare i ponti.","chiudere rapporti chiusura relazione tagliare i ponti"],
+ ["Let's close this chapter.","Chiudiamo questo capitolo.","It's time to close that chapter of my life.","È ora di chiudere quel capitolo della mia vita.","","chiudere chiusura capitolo voltare pagina close"],
+ ["Don't shout, I can hear you.","Non urlare, ti sento.","He shouted at the referee.","Ha urlato contro l'arbitro.","","gridare urlare shout"],
+ ["Don't cry.","Non piangere.","The baby won't stop crying.","Il bambino non smette di piangere.","","piangere cry"],
+ ["Did you notice her new haircut?","Hai notato il suo nuovo taglio di capelli?","I didn't notice you came in.","Non mi sono accorto che eri entrato.","","notare accorgersi notice"]
 ]},
 { id:"proporre", title:"Organizzarsi e proporre", items:[
  ["Do you feel like…?","Ti va di…?","Do you feel like going out?","Ti va di uscire?","Dopo “feel like” si usa -ing."],
@@ -44,7 +65,14 @@ window.CATEGORIES = [
  ["How about…?","Che ne dici di…?","How about meeting at eight?","Che ne dici di vederci alle otto?"],
  ["Are you free on…?","Sei libero…?","Are you free on Saturday?","Sei libero sabato?"],
  ["What time works for you?","Quale orario ti va bene?"],
- ["I'll let you know.","Ti faccio sapere."]
+ ["I'll let you know.","Ti faccio sapere."],
+ ["Did you enjoy the show?","Ti è piaciuto lo spettacolo?","The show starts at eight.","Lo spettacolo comincia alle otto.","Show è anche un verbo: mostrare."],
+ ["Do you want to go to the cinema?","Ti va di andare al cinema?","Is there a good film on at the cinema?","Danno un bel film al cinema?"],
+ ["Have you seen that film?","Hai visto quel film?","It's a really good film.","È un film davvero bello."],
+ ["Is the museum open today?","Il museo è aperto oggi?","The museum is closed on Mondays.","Il museo è chiuso il lunedì."],
+ ["Do you want to watch a film?","Vuoi guardare un film?","We watched a film last night.","Abbiamo guardato un film ieri sera.","Look at = oggetto fermo; watch = qualcosa in movimento.","guardare watch"],
+ ["I'd like to invite you to…","Vorrei invitarti a…","She invited us to dinner.","Ci ha invitati a cena.","","invitare invite"],
+ ["I suggest…","Propongo di… / Suggerisco di…","I suggest taking a taxi.","Propongo di prendere un taxi.","Si usa suggest + -ing.","suggerire proporre suggest"]
 ]},
 { id:"accettare", title:"Accettare e rifiutare", items:[
  ["I'd love to.","Mi piacerebbe molto. / Volentieri."],
@@ -55,7 +83,9 @@ window.CATEGORIES = [
  ["I'm afraid I can't.","Mi dispiace, ma non posso."],
  ["I'd love to, but I already have plans.","Mi piacerebbe, ma ho già un impegno."],
  ["Maybe another time.","Magari un'altra volta."],
- ["I'd rather not, thanks.","Preferirei di no, grazie."]
+ ["I'd rather not, thanks.","Preferirei di no, grazie."],
+ ["Of course!","Certo! / Naturalmente!","Can you help me? — Of course!","Puoi aiutarmi? — Certo!"],
+ ["No problem.","Nessun problema.","Sorry! — No problem.","Scusa! — Nessun problema."]
 ]},
 { id:"futuro", title:"Progetti e futuro", items:[
  ["I'm going to…","Ho intenzione di…","I'm going to visit a friend this weekend.","Questo fine settimana andrò a trovare un amico."],
@@ -78,7 +108,16 @@ window.CATEGORIES = [
  ["I'm looking forward to it.","Non vedo l'ora.","I'm looking forward to seeing you.","Non vedo l'ora di vederti.","Dopo “look forward to” il verbo prende -ing."],
  ["I can't wait to…","Non vedo l'ora di…","I can't wait to see you.","Non vedo l'ora di vederti."],
  ["It bothers me when…","Mi dà fastidio quando…","It bothers me when people interrupt me.","Mi dà fastidio quando mi interrompono."],
- ["I'm happy for you.","Sono felice per te."]
+ ["I'm happy for you.","Sono felice per te."],
+ ["How do you feel?","Come ti senti?","How do you feel today?","Come ti senti oggi?"],
+ ["I feel…","Mi sento…","I feel much better.","Mi sento molto meglio."],
+ ["I'm hungry / thirsty.","Ho fame / Ho sete.","I'm hungry, shall we eat?","Ho fame, mangiamo?","In inglese si usa “to be”, non “to have”."],
+ ["I'm cold / hot.","Ho freddo / Ho caldo.","Can you close the window? I'm cold.","Puoi chiudere la finestra? Ho freddo."],
+ ["I'm happy / sad / angry.","Sono felice / triste / arrabbiato.","I'm so happy for you!","Sono così felice per te!"],
+ ["I'm worried.","Sono preoccupato.","I'm worried about the exam.","Sono preoccupato per l'esame."],
+ ["I really enjoyed it.","Mi è piaciuto molto.","I really enjoyed the concert.","Mi è piaciuto molto il concerto.","Si dice enjoy + -ing: I enjoy cooking.","godersi divertirsi enjoy"],
+ ["I don't feel well.","Non mi sento bene. / Sto male.","I don't feel well, I think I'll go home.","Non mi sento bene, credo che tornerò a casa."],
+ ["You seem tired.","Sembri stanco.","It seems like a good idea.","Sembra una buona idea.","","sembrare apparire seem"]
 ]},
 { id:"opinioni", title:"Opinioni, dubbi e decisioni", items:[
  ["I think…","Penso che…","I think it's a good idea.","Penso che sia una buona idea."],
@@ -92,7 +131,14 @@ window.CATEGORIES = [
  ["It depends on…","Dipende da…","It depends on the weather.","Dipende dal tempo."],
  ["Let me think about it.","Fammi pensare."],
  ["I've changed my mind.","Ho cambiato idea."],
- ["It's up to you.","Decidi tu."]
+ ["It's up to you.","Decidi tu."],
+ ["I don't believe you.","Non ti credo.","I can't believe it!","Non ci posso credere!","","credere believe"],
+ ["It's hard to choose.","È difficile scegliere.","You can choose any colour.","Puoi scegliere qualsiasi colore.","","scegliere choose"],
+ ["I agree with you.","Sono d'accordo con te.","I totally agree.","Sono completamente d'accordo.","","essere d'accordo concordare agree"],
+ ["I can imagine.","Posso immaginare.","Imagine living by the sea.","Immagina di vivere al mare.","","immaginare imagine"],
+ ["I guess so.","Suppongo di sì. / Credo di sì.","Guess what? I got the job.","Indovina? Ho ottenuto il lavoro.","","indovinare supporre guess"],
+ ["We need to discuss…","Dobbiamo discutere di…","We need to discuss the plan.","Dobbiamo discutere del piano.","Non si dice “discuss about”.","discutere parlare di discuss"],
+ ["I didn't expect that.","Non me l'aspettavo.","I'm expecting a call.","Aspetto una telefonata.","Falso amico: “aspettare” è wait.","aspettarsi prevedere expect"]
 ]},
 { id:"bisogni", title:"Volere e avere bisogno", items:[
  ["I need to…","Devo… / Ho bisogno di…","I need to get some sleep.","Ho bisogno di dormire un po'.","Dopo “need to” si usa il verbo base."],
@@ -127,7 +173,19 @@ window.CATEGORIES = [
  ["I can deal with it.","Ci penso io.","I can deal with the bank.","Ci penso io alla banca.","“Deal with” = affrontare, occuparsi di."],
  ["Who's in charge of…?","Chi si occupa di…?","Who's in charge of the booking?","Chi si occupa della prenotazione?"],
  ["Can I count on you?","Posso contare su di te?"],
- ["You saved my life.","Mi hai salvato.","","","Informale: si dice anche per scherzo."]
+ ["You saved my life.","Mi hai salvato.","","","Informale: si dice anche per scherzo."],
+ ["Excuse me","Scusi / Mi scusi","Excuse me, where is the station?","Scusi, dov'è la stazione?","Per attirare l'attenzione. Per chiedere scusa si usa sorry."],
+ ["Thank you / Thanks","Grazie","Thank you so much!","Grazie mille!"],
+ ["You're welcome.","Prego.","Thanks! — You're welcome.","Grazie! — Prego."],
+ ["Please","Per favore","Two coffees, please.","Due caffè, per favore."],
+ ["Sorry!","Scusa! / Mi dispiace!","Sorry, I'm late.","Scusa, sono in ritardo."],
+ ["Could you send me…?","Potresti mandarmi…?","Could you send me the address?","Potresti mandarmi l'indirizzo?","","mandare inviare spedire send"],
+ ["Could you close the window?","Potresti chiudere la finestra?","Please close the door behind you.","Per favore chiudi la porta dietro di te.","","chiudere close"],
+ ["Can you throw this away?","Puoi buttare questo?","Throw me the ball.","Lanciami la palla.","","lanciare buttare gettare throw"],
+ ["Did you receive my email?","Hai ricevuto la mia email?","I haven't received anything yet.","Non ho ancora ricevuto niente.","","ricevere receive"],
+ ["Am I allowed to…?","Posso…? / Mi è permesso…?","Am I allowed to take photos here?","Posso fare foto qui?","","permettere consentire vietare allow"],
+ ["Can I borrow your pen?","Posso prendere in prestito la tua penna?","Could I borrow your charger?","Posso prendere in prestito il tuo caricabatterie?","Borrow = prendere; lend = dare.","prendere in prestito borrow"],
+ ["Could you lend me ten euros?","Potresti prestarmi dieci euro?","Can you lend me your umbrella?","Puoi prestarmi il tuo ombrello?","","prestare lend"]
 ]},
 { id:"passato", title:"Raccontare il passato", items:[
  ["I went to…","Sono andato a…","I went to a concert last night.","Ieri sera sono andato a un concerto.","go → went → gone"],
@@ -139,7 +197,14 @@ window.CATEGORIES = [
  ["It turned out that…","Alla fine si è scoperto che…","It turned out that we knew the same people.","Alla fine abbiamo scoperto di conoscere le stesse persone."],
  ["In the end, we…","Alla fine abbiamo…","In the end, we stayed home.","Alla fine siamo rimasti a casa."],
  ["Have you ever…?","Hai mai…?","Have you ever travelled alone?","Hai mai viaggiato da solo?","have/has + participio passato: esperienza fino a oggi."],
- ["I've never…","Non ho mai…","I've never tried surfing.","Non ho mai provato a fare surf."]
+ ["I've never…","Non ho mai…","I've never tried surfing.","Non ho mai provato a fare surf."],
+ ["I can't remember…","Non ricordo… / Non mi ricordo…","I can't remember his name.","Non ricordo il suo nome.","Non si usa “remember me the name”.","ricordare ricordarsi remember"],
+ ["What happened?","Che cosa è successo?","What happened to your arm?","Che cosa è successo al tuo braccio?","","succedere accadere happen"],
+ ["He jumped into the water.","È saltato in acqua.","The kids jumped into the sea.","I bambini sono saltati in mare.","","saltare jump"],
+ ["We laughed all night.","Abbiamo riso tutta la notte.","I laughed so much at the party.","Ho riso moltissimo alla festa.","","ridere laugh"],
+ ["He fell off his bike.","È caduto dalla bici.","Be careful, you might fall.","Attenzione, potresti cadere.","","cadere fall"],
+ ["We moved to Milan last year.","L'anno scorso ci siamo trasferiti a Milano.","They moved house in June.","Hanno traslocato a giugno.","","muoversi trasferirsi traslocare move"],
+ ["Children grow so fast.","I bambini crescono così in fretta.","She grew up here.","È cresciuta qui.","Passato: grew → grown.","crescere coltivare grow"]
 ]},
 { id:"routine", title:"Routine e cambiamenti", items:[
  ["I usually…","Di solito…","I usually have breakfast at home.","Di solito faccio colazione a casa."],
@@ -150,7 +215,17 @@ window.CATEGORIES = [
  ["I'm used to…","Sono abituato a…","I'm used to getting up early.","Sono abituato ad alzarmi presto.","Dopo “be used to” il verbo prende -ing."],
  ["I'm getting used to…","Mi sto abituando a…","I'm getting used to living alone.","Mi sto abituando a vivere da solo."],
  ["It takes me … to…","Ci metto… a…","It takes me twenty minutes to get ready.","Ci metto venti minuti a prepararmi."],
- ["I spend a lot of time…","Passo molto tempo a…","I spend a lot of time reading.","Passo molto tempo a leggere."]
+ ["I spend a lot of time…","Passo molto tempo a…","I spend a lot of time reading.","Passo molto tempo a leggere."],
+ ["The film begins at nine.","Il film comincia alle nove.","The lesson begins at ten.","La lezione inizia alle dieci.","","cominciare iniziare begin start"],
+ ["I finish work at six.","Finisco di lavorare alle sei.","When do you finish?","Quando finisci?","","finire terminare finish"],
+ ["I teach English.","Insegno inglese.","She teaches at a school near here.","Insegna in una scuola qui vicino.","Non confondere con learn (imparare).","insegnare teach"],
+ ["I study in the evening.","Studio la sera.","I study at the library after work.","Studio in biblioteca dopo il lavoro.","","studiare study"],
+ ["I wash my hands before eating.","Mi lavo le mani prima di mangiare.","I need to wash my hands.","Devo lavarmi le mani.","","lavare lavarsi wash"],
+ ["Do you drive to work?","Vai al lavoro in macchina?","I drive to work every day.","Vado al lavoro in macchina ogni giorno.","","guidare drive"],
+ ["I dance on Saturdays.","Ballo il sabato.","Do you want to dance?","Vuoi ballare?","","ballare dance"],
+ ["She sings in a choir.","Canta in un coro.","I sing in the shower.","Canto sotto la doccia.","","cantare sing"],
+ ["We closed the deal.","Abbiamo chiuso l'accordo.","We closed the deal on Friday.","Abbiamo chiuso l'accordo venerdì.","Anche: close a project = chiudere un progetto.","chiudere affare accordo progetto lavoro chiusura close"],
+ ["I try to avoid the traffic.","Cerco di evitare il traffico.","Let's avoid the rush hour.","Evitiamo l'ora di punta.","","evitare avoid"]
 ]},
 { id:"viaggi", title:"Spostamenti e tempo", items:[
  ["I'm on my way.","Sto arrivando."],
@@ -161,7 +236,52 @@ window.CATEGORIES = [
  ["How long does it take?","Quanto tempo ci vuole?"],
  ["Could you tell me how to get to…?","Potresti dirmi come arrivare a…?","Could you tell me how to get to the station?","Potresti dirmi come arrivare alla stazione?"],
  ["Does this bus go to…?","Questo autobus va a…?","Does this bus go to the city centre?","Questo autobus va in centro?"],
- ["I think we're going the wrong way.","Credo che stiamo andando dalla parte sbagliata."]
+ ["I think we're going the wrong way.","Credo che stiamo andando dalla parte sbagliata."],
+ ["How can I reach…?","Come posso raggiungere…?","How can I reach the airport from here?","Come posso raggiungere l'aeroporto da qui?"],
+ ["Is it easy to reach on foot?","È facile da raggiungere a piedi?","Is the beach easy to reach on foot?","La spiaggia è facile da raggiungere a piedi?"],
+ ["We should reach… by…","Dovremmo arrivare a… entro…","We should reach the hotel by six.","Dovremmo arrivare in hotel entro le sei."],
+ ["I can't reach you.","Non riesco a raggiungerti (al telefono).","I can't reach you. Is your phone off?","Non riesco a raggiungerti. Hai il telefono spento?","Anche: contattare qualcuno."],
+ ["Which bus goes to…?","Quale autobus va a…?","Which bus goes to the station?","Quale autobus va alla stazione?","bus = autobus."],
+ ["Where is the bus stop?","Dov'è la fermata dell'autobus?","Is there a bus stop near here?","C'è una fermata dell'autobus qui vicino?"],
+ ["One ticket to…, please.","Un biglietto per…, per favore.","One ticket to Rome, please.","Un biglietto per Roma, per favore."],
+ ["Can you show me on the map?","Puoi mostrarmelo sulla mappa?","I'd like a map of the city.","Vorrei una cartina della città."],
+ ["I forgot my passport.","Ho dimenticato il passaporto.","Do you have your passport with you?","Hai il passaporto con te?"],
+ ["Where can I leave my luggage?","Dove posso lasciare i bagagli?","My luggage hasn't arrived.","Il mio bagaglio non è arrivato.","Luggage non ha il plurale."],
+ ["How far is the airport?","Quanto dista l'aeroporto?","We need to be at the airport by six.","Dobbiamo essere all'aeroporto entro le sei."],
+ ["Let's take a taxi.","Prendiamo un taxi.","How much is a taxi to the hotel?","Quanto costa un taxi fino all'hotel?"],
+ ["It's on the next street.","È nella via accanto.","Our hotel is on the next street.","Il nostro hotel è nella via accanto.","street = strada / via."],
+ ["Take an umbrella.","Prendi l'ombrello.","Take an umbrella, it might rain.","Prendi l'ombrello, potrebbe piovere."],
+ ["Let's go to the beach.","Andiamo in spiaggia.","The sea is really warm today.","Oggi il mare è davvero caldo.","beach = spiaggia; sea = mare."],
+ ["We went to the mountains.","Siamo andati in montagna.","The view from the mountain was amazing.","La vista dalla montagna era bellissima."],
+ ["The river is very cold.","Il fiume è molto freddo.","Is it safe to swim in the river?","È sicuro fare il bagno nel fiume?"],
+ ["The sun is shining.","C'è il sole.","The sun sets at five in winter.","D'inverno il sole tramonta alle cinque."],
+ ["There's a strong wind today.","Oggi c'è molto vento.","The wind is cold, take a jacket.","Il vento è freddo, prendi una giacca."],
+ ["There isn't a cloud in the sky.","Non c'è una nuvola in cielo.","Those clouds look like rain.","Quelle nuvole fanno pensare alla pioggia."],
+ ["Let's sit under that tree.","Sediamoci sotto quell'albero.","The leaves turn yellow in autumn.","In autunno le foglie diventano gialle.","leaf = foglia; plurale: leaves."],
+ ["She gave me a flower.","Mi ha dato un fiore.","These flowers smell lovely.","Questi fiori hanno un profumo bellissimo."],
+ ["What time is it?","Che ora è? / Che ore sono?","Excuse me, what time is it?","Scusi, che ore sono?","Anche: Do you have the time?"],
+ ["It's five o'clock.","Sono le cinque in punto.","The shop closes at five o'clock.","Il negozio chiude alle cinque in punto."],
+ ["It's half past three.","Sono le tre e mezza.","It's half past three. We're late!","Sono le tre e mezza. Siamo in ritardo!","Half past = e mezza; quarter past = e un quarto."],
+ ["It's a quarter to nine.","Sono le nove meno un quarto.","The train leaves at a quarter to nine.","Il treno parte alle nove meno un quarto."],
+ ["What day is it today?","Che giorno è oggi?","What day is it today? — It's Monday.","Che giorno è oggi? — È lunedì.","Giorni: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday."],
+ ["on Monday / on Friday…","lunedì / venerdì… (in quel giorno)","See you on Friday.","Ci vediamo venerdì.","Con i giorni si usa on."],
+ ["in March / in July…","a marzo / a luglio…","My birthday is in March.","Il mio compleanno è a marzo.","Mesi: January, February, March, April, May, June, July, August, September, October, November, December."],
+ ["yesterday / today / tomorrow","ieri / oggi / domani","I'll call you tomorrow.","Ti chiamo domani."],
+ ["last week / next week","la settimana scorsa / la prossima settimana","I'm busy next week.","La prossima settimana sono occupato."],
+ ["every day","ogni giorno / tutti i giorni","I walk to work every day.","Vado al lavoro a piedi ogni giorno."],
+ ["in the morning / evening","di mattina / di sera","I study in the evening.","Studio di sera.","Di notte: at night."],
+ ["twice a week","due volte a settimana","I go to the gym twice a week.","Vado in palestra due volte a settimana.","Una volta: once; due volte: twice; tre volte: three times."],
+ ["We're flying to London tomorrow.","Domani voliamo a Londra.","Do you like flying?","Ti piace prendere l'aereo?","","volare prendere l'aereo fly"],
+ ["We climbed up to see the view.","Siamo saliti per vedere il panorama.","We climbed the hill at sunset.","Abbiamo scalato la collina al tramonto.","","salire scalare arrampicarsi climb"],
+ ["We stood in line for an hour.","Siamo stati in coda un'ora.","I don't want to stand all day.","Non voglio stare in piedi tutto il giorno.","","stare in piedi aspettare stand"],
+ ["Can I sit here?","Posso sedermi qui?","Is anyone sitting here?","C'è qualcuno seduto qui?","","sedersi stare seduto sit"],
+ ["The flight leaves at… and lands at…","Il volo parte alle… e atterra alle…","The flight leaves at 8:10 and lands at 10:30.","Il volo parte alle 8:10 e atterra alle 10:30.","Estimated landing = atterraggio previsto.","partenza partire atterraggio atterrare orario volo estimated landing"],
+ ["Estimated arrival: 10:30.","Arrivo previsto: 10:30.","The estimated arrival time is 10:30.","L'orario di arrivo previsto è le 10:30.","","arrivo previsto orario estimated arrival"],
+ ["The bus leaves at… and arrives at…","L'autobus parte alle… e arriva alle…","The bus leaves at 9:15 and arrives at 11:00.","L'autobus parte alle 9:15 e arriva alle 11:00.","","partenza partire arrivo arrivare orario autobus treno"],
+ ["What time does it land?","A che ora atterra?","What time does your flight land?","A che ora atterra il tuo volo?","","atterrare atterraggio land"],
+ ["The flight is delayed.","Il volo è in ritardo.","Our flight has been delayed by an hour.","Il nostro volo ha un'ora di ritardo.","","ritardo ritardato delayed"],
+ ["I'm afraid of flying.","Ho paura di volare.","I'm afraid of flying, so I take the train.","Ho paura di volare, quindi prendo il treno.","","volare aereo paura fly"],
+ ["Follow me, please.","Seguimi, per favore.","Just follow the signs to the station.","Segui le indicazioni per la stazione.","","seguire follow"]
 ]},
 { id:"cibo", title:"Cibo e ristoranti", items:[
  ["Could we have a table for two?","Potremmo avere un tavolo per due?"],
@@ -172,7 +292,10 @@ window.CATEGORIES = [
  ["Does this contain…?","Questo contiene…?","Does this contain milk?","Contiene latte?"],
  ["Could we have the bill, please?","Potremmo avere il conto, per favore?"],
  ["Shall we split the bill?","Dividiamo il conto?"],
- ["That was delicious.","Era buonissimo."]
+ ["That was delicious.","Era buonissimo."],
+ ["I'm preparing dinner.","Sto preparando la cena.","I'll prepare something light.","Preparo qualcosa di leggero.","","preparare prepararsi prepare"],
+ ["Shall we share a dessert?","Dividiamo un dolce?","Can we share a taxi?","Possiamo dividere un taxi?","","condividere dividere share"],
+ ["I'd like to order, please.","Vorrei ordinare, per favore.","Are you ready to order?","Siete pronti per ordinare?","","ordinare order"]
 ]},
 { id:"acquisti", title:"Acquisti e alloggio", items:[
  ["I'm looking for…","Sto cercando…","I'm looking for a jacket.","Sto cercando una giacca."],
@@ -183,7 +306,25 @@ window.CATEGORIES = [
  ["I'd like to return this.","Vorrei restituire questo articolo."],
  ["I have a reservation under…","Ho una prenotazione a nome…","I have a reservation under Rossi.","Ho una prenotazione a nome Rossi."],
  ["Is breakfast included?","La colazione è inclusa?"],
- ["Would it be possible to check out later?","Sarebbe possibile lasciare la camera più tardi?"]
+ ["Would it be possible to check out later?","Sarebbe possibile lasciare la camera più tardi?"],
+ ["What time does the shop close?","A che ora chiude il negozio?","The shop closes at seven.","Il negozio chiude alle sette."],
+ ["We buy fruit at the market.","Compriamo la frutta al mercato.","The market is open on Saturdays.","Il mercato è aperto il sabato."],
+ ["I don't have enough money.","Non ho abbastanza soldi.","How much money do you need?","Di quanti soldi hai bisogno?","Money non ha il plurale."],
+ ["How much is it?","Quanto costa?","How much is this jacket?","Quanto costa questa giacca?"],
+ ["How much are they?","Quanto costano?","How much are these shoes?","Quanto costano queste scarpe?","Con il plurale si usa are, non is."],
+ ["It's ten euros.","Costa dieci euro.","It's twenty euros in total.","Sono venti euro in tutto."],
+ ["How many…?","Quanti / Quante…?","How many people are coming?","Quante persone vengono?","How many con i numerabili; how much con gli altri (How much water?)."],
+ ["I'd like two, please.","Ne vorrei due, per favore.","I'd like two tickets, please.","Vorrei due biglietti, per favore."],
+ ["Numbers 1–10","Numeri da 1 a 10","One, two, three, four, five, six, seven, eight, nine, ten.","Uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci."],
+ ["Numbers 20–100","Numeri da 20 a 100","Twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred.","Venti, trenta, quaranta, cinquanta, sessanta, settanta, ottanta, novanta, cento."],
+ ["first, second, third","primo, secondo, terzo","It's my first time here.","È la mia prima volta qui."],
+ ["She's wearing a red coat.","Indossa un cappotto rosso.","I'm wearing my new shoes.","Porto le mie scarpe nuove.","","indossare indosso portare vestirsi wear"],
+ ["Where can I buy…?","Dove posso comprare…?","Where can I buy a ticket?","Dove posso comprare un biglietto?","","comprare acquistare buy"],
+ ["Did you find what you needed?","Hai trovato quello che ti serviva?","I found it online.","L'ho trovato online.","","trovare find"],
+ ["They're building a new bridge.","Stanno costruendo un nuovo ponte.","The hotel was built in 1950.","L'hotel è stato costruito nel 1950.","","costruire build"],
+ ["We close at six.","Chiudiamo alle sei.","The shop is closed on Sundays.","Il negozio è chiuso la domenica.","","chiudere chiusura orario chiuso close"],
+ ["I'd like to close my account.","Vorrei chiudere il conto.","He closed his account last week.","Ha chiuso il conto la settimana scorsa.","","chiudere conto banca close"],
+ ["Do you accept credit cards?","Accettate carte di credito?","We only accept cash.","Accettiamo solo contanti.","","accettare accept"]
 ]},
 { id:"problemi", title:"Problemi e imprevisti", items:[
  ["There's something wrong with…","C'è qualcosa che non va con…","There's something wrong with my phone.","Il mio telefono ha qualcosa che non va."],
@@ -194,7 +335,15 @@ window.CATEGORIES = [
  ["I forgot to…","Mi sono dimenticato di…","I forgot to bring my charger.","Mi sono dimenticato di portare il caricabatterie."],
  ["I didn't mean to…","Non volevo…","I didn't mean to upset you.","Non volevo farti stare male."],
  ["I need a doctor.","Ho bisogno di un medico."],
- ["Is there another way?","C'è un altro modo?"]
+ ["Is there another way?","C'è un altro modo?"],
+ ["I can't find my keys.","Non trovo le chiavi.","I locked my keys in the car.","Ho lasciato le chiavi chiuse in macchina."],
+ ["Where is the nearest hospital?","Dov'è l'ospedale più vicino?","He's in hospital.","È in ospedale."],
+ ["Is there a pharmacy near here?","C'è una farmacia qui vicino?","I need to go to the pharmacy.","Devo andare in farmacia."],
+ ["The door won't open.","La porta non si apre.","Push the door, don't pull it.","Spingi la porta, non tirarla.","","spingere tirare push pull"],
+ ["Where did you hide it?","Dove l'hai nascosto?","She hid the key under the mat.","Ha nascosto la chiave sotto lo zerbino.","","nascondere nascondersi hide"],
+ ["Can you fix it?","Puoi aggiustarlo?","Can you fix my bike?","Puoi aggiustare la mia bici?","","riparare aggiustare sistemare fix"],
+ ["He's always complaining.","Si lamenta sempre.","He's always complaining about the weather.","Si lamenta sempre del tempo.","","lamentarsi lagnarsi reclamare complain"],
+ ["My wallet has disappeared.","Il mio portafoglio è sparito.","The cat disappeared three days ago.","Il gatto è scomparso tre giorni fa.","","sparire scomparire svanire disappear"]
 ]},
 { id:"capire", title:"Capire e farsi capire", items:[
  ["Sorry, I didn't catch that.","Scusa, non ho capito quello che hai detto."],
@@ -206,7 +355,10 @@ window.CATEGORIES = [
  ["Could you explain it another way?","Potresti spiegarlo in un altro modo?"],
  ["How do you say … in English?","Come si dice … in inglese?"],
  ["Let me put it another way.","Provo a dirlo in un altro modo."],
- ["Just to confirm, you want me to…, right?","Per conferma, vuoi che io…, giusto?"]
+ ["Just to confirm, you want me to…, right?","Per conferma, vuoi che io…, giusto?"],
+ ["I can't hear you.","Non ti sento.","Sorry, I couldn't hear you.","Scusa, non ti ho sentito.","Hear = sentire con le orecchie.","sentire udire hear"],
+ ["Can you write it down?","Puoi scriverlo?","Could you write down your number?","Potresti scrivere il tuo numero?","","scrivere write"],
+ ["Can you describe it?","Puoi descriverlo?","Can you describe the man?","Puoi descrivere l'uomo?","","descrivere describe"]
 ]},
 { id:"phrasal", title:"Phrasal verbs di tutti i giorni", items:[
  ["come over","passare da qualcuno","Do you want to come over later?","Ti va di passare da me più tardi?"],
@@ -242,6 +394,18 @@ window.CATEGORIES = [
  ["wake up","svegliarsi","I usually wake up at seven.","Di solito mi sveglio alle sette."],
  ["get up","alzarsi dal letto","I woke up at seven, but I got up at eight.","Mi sono svegliato alle sette, ma mi sono alzato alle otto."],
  ["go out","uscire (per svago)","Are you going out tonight?","Esci stasera?"],
+ ["go on","continuare / succedere","What's going on here?","Che cosa sta succedendo qui?"],
+ ["come back","tornare","She came back an hour later.","È tornata un'ora dopo."],
+ ["go back","tornare (in un posto o su un argomento)","Let's go back to your question.","Torniamo alla tua domanda."],
+ ["come out","uscire / venire fuori","The truth came out in the end.","Alla fine la verità è venuta fuori."],
+ ["point out","far notare","She pointed out my mistake.","Mi ha fatto notare il mio errore."],
+ ["take on","accettare (un lavoro o un incarico)","She took on two new clients.","Ha preso in carico due nuovi clienti."],
+ ["make up","inventare","He made up an excuse.","Si è inventato una scusa.","Ha anche il senso di “fare pace”."],
+ ["get back","tornare (a casa)","I got back late last night.","Sono tornato tardi ieri sera."],
+ ["look up","cercare (un'informazione)","Look it up in the dictionary.","Cercalo nel dizionario.","Con un pronome: look it up."],
+ ["sit down","sedersi","Please sit down.","Siediti, per favore."],
+ ["take out","tirare fuori / portare fuori","He took out his phone.","Ha tirato fuori il telefono."],
+ ["come on","dai! / sbrigati","Come on, we're late!","Dai, siamo in ritardo!","Informale."]
 ]},
 { id:"collegare", title:"Collegare le idee", items:[
  ["because","perché","I'm staying home because I'm tired.","Resto a casa perché sono stanco."],
