@@ -9,7 +9,8 @@ window.CATEGORIES = [
  ["In my free time, I like…","Nel tempo libero mi piace…","In my free time, I like going for walks.","Nel tempo libero mi piace fare passeggiate."],
  ["I'm really into…","Mi appassiona… / Mi piace molto…","I'm really into photography.","Sono appassionato di fotografia.","Informale."],
  ["I'm not much of a…","Non sono un gran…","I'm not much of a cook.","Non sono un gran cuoco."],
- ["What about you?","E tu?"]
+ ["What about you?","E tu?"],
+ ["I work as a", "Lavoro come", "I work as a nurse.", "Lavoro come infermiera.", "Per la professione si usa as, non like.", "lavoro lavorare professione mestiere impiego"]
 ]},
 { id:"conoscere", title:"Conoscere qualcuno", items:[
  ["How's it going?","Come va?","","","Informale."],
@@ -72,7 +73,8 @@ window.CATEGORIES = [
  ["Is the museum open today?","Il museo è aperto oggi?","The museum is closed on Mondays.","Il museo è chiuso il lunedì."],
  ["Do you want to watch a film?","Vuoi guardare un film?","We watched a film last night.","Abbiamo guardato un film ieri sera.","Look at = oggetto fermo; watch = qualcosa in movimento.","guardare watch"],
  ["I'd like to invite you to…","Vorrei invitarti a…","She invited us to dinner.","Ci ha invitati a cena.","","invitare invite"],
- ["I suggest…","Propongo di… / Suggerisco di…","I suggest taking a taxi.","Propongo di prendere un taxi.","Si usa suggest + -ing.","suggerire proporre suggest"]
+ ["I suggest…","Propongo di… / Suggerisco di…","I suggest taking a taxi.","Propongo di prendere un taxi.","Si usa suggest + -ing.","suggerire proporre suggest"],
+ ["The sun is shining.", "C'è il sole.", "The sun is shining, so let's go out.", "C'è il sole, quindi usciamo.", "Alla lettera: il sole brilla.", "splendere brillare sole luce bel tempo"]
 ]},
 { id:"accettare", title:"Accettare e rifiutare", items:[
  ["I'd love to.","Mi piacerebbe molto. / Volentieri."],
@@ -95,7 +97,8 @@ window.CATEGORIES = [
  ["I'll probably…","Probabilmente…","I'll probably stay home.","Probabilmente resterò a casa."],
  ["I might…","Potrei…","I might go out later.","Potrei uscire più tardi."],
  ["I haven't decided yet.","Non ho ancora deciso."],
- ["I'll see how I feel.","Vedrò come mi sento."]
+ ["I'll see how I feel.","Vedrò come mi sento."],
+ ["It's going to rain.", "Sta per piovere.", "Take an umbrella. It's going to rain.", "Prendi l'ombrello. Sta per piovere.", "", "piovere pioggia pioverà ombrello tempo"]
 ]},
 { id:"gusti", title:"Gusti ed emozioni", items:[
  ["I feel…","Mi sento…","I feel a bit tired.","Mi sento un po' stanco."],
@@ -185,7 +188,10 @@ window.CATEGORIES = [
  ["Did you receive my email?","Hai ricevuto la mia email?","I haven't received anything yet.","Non ho ancora ricevuto niente.","","ricevere receive"],
  ["Am I allowed to…?","Posso…? / Mi è permesso…?","Am I allowed to take photos here?","Posso fare foto qui?","","permettere consentire vietare allow"],
  ["Can I borrow your pen?","Posso prendere in prestito la tua penna?","Could I borrow your charger?","Posso prendere in prestito il tuo caricabatterie?","Borrow = prendere; lend = dare.","prendere in prestito borrow"],
- ["Could you lend me ten euros?","Potresti prestarmi dieci euro?","Can you lend me your umbrella?","Puoi prestarmi il tuo ombrello?","","prestare lend"]
+ ["Could you lend me ten euros?","Potresti prestarmi dieci euro?","Can you lend me your umbrella?","Puoi prestarmi il tuo ombrello?","","prestare lend"],
+ ["Please sit down.", "Prego, si accomodi. Siediti.", "Please sit down. I'll be right with you.", "Si accomodi pure. Sono da lei tra un attimo.", "", "sedersi siediti sedere accomodarsi sedia"],
+ ["Could you teach me how to?", "Potresti insegnarmi a?", "Could you teach me how to play chess?", "Potresti insegnarmi a giocare a scacchi?", "", "insegnare insegnami imparare scacchi giocare"],
+ ["You should rest.", "Dovresti riposarti.", "You look tired. You should rest.", "Sembri stanco. Dovresti riposarti.", "Rest vale come verbo e come nome: have a rest.", "riposare riposarti riposo pausa"]
 ]},
 { id:"passato", title:"Raccontare il passato", items:[
  ["I went to…","Sono andato a…","I went to a concert last night.","Ieri sera sono andato a un concerto.","go → went → gone"],
@@ -204,7 +210,15 @@ window.CATEGORIES = [
  ["We laughed all night.","Abbiamo riso tutta la notte.","I laughed so much at the party.","Ho riso moltissimo alla festa.","","ridere laugh"],
  ["He fell off his bike.","È caduto dalla bici.","Be careful, you might fall.","Attenzione, potresti cadere.","","cadere fall"],
  ["We moved to Milan last year.","L'anno scorso ci siamo trasferiti a Milano.","They moved house in June.","Hanno traslocato a giugno.","","muoversi trasferirsi traslocare move"],
- ["Children grow so fast.","I bambini crescono così in fretta.","She grew up here.","È cresciuta qui.","Passato: grew → grown.","crescere coltivare grow"]
+ ["Children grow so fast.","I bambini crescono così in fretta.","She grew up here.","È cresciuta qui.","Passato: grew → grown.","crescere coltivare grow"],
+ ["I ran", "Ho corso", "I ran five kilometres yesterday.", "Ieri ho corso cinque chilometri.", "run - ran - run, verbo irregolare.", "correre corso corsa corsi"],
+ ["We climbed to the top.", "Siamo saliti fino in cima.", "We climbed to the top in two hours.", "Siamo saliti fino in cima in due ore.", "Climb si usa per montagne, scale e alberi.", "scalare salire arrampicarsi montagna cima"],
+ ["I stood in line for", "Sono rimasto in fila per", "I stood in line for an hour.", "Sono rimasto in fila per un'ora.", "stand - stood - stood, verbo irregolare.", "stare in piedi fila coda restare aspettare"],
+ ["I wrote", "Ho scritto", "I wrote him an email this morning.", "Gli ho scritto un'email stamattina.", "write - wrote - written, verbo irregolare.", "scrivere scritto scrivo email lettera"],
+ ["I learned", "Ho imparato", "I learned to swim when I was six.", "Ho imparato a nuotare a sei anni.", "Si dice learned o learnt.", "imparare imparato apprendere"],
+ ["I taught", "Ho insegnato", "I taught English for two years.", "Ho insegnato inglese per due anni.", "teach - taught - taught, verbo irregolare.", "insegnare insegnato insegnante professore"],
+ ["It rained all day.", "Ha piovuto tutto il giorno.", "It rained all day, so we stayed in.", "Ha piovuto tutto il giorno, quindi siamo rimasti in casa.", "", "piovere piovuto pioggia temporale"],
+ ["It snowed", "Ha nevicato", "It snowed a lot last winter.", "L'inverno scorso ha nevicato molto.", "", "nevicare nevicato neve inverno"]
 ]},
 { id:"routine", title:"Routine e cambiamenti", items:[
  ["I usually…","Di solito…","I usually have breakfast at home.","Di solito faccio colazione a casa."],
@@ -225,7 +239,16 @@ window.CATEGORIES = [
  ["I dance on Saturdays.","Ballo il sabato.","Do you want to dance?","Vuoi ballare?","","ballare dance"],
  ["She sings in a choir.","Canta in un coro.","I sing in the shower.","Canto sotto la doccia.","","cantare sing"],
  ["We closed the deal.","Abbiamo chiuso l'accordo.","We closed the deal on Friday.","Abbiamo chiuso l'accordo venerdì.","Anche: close a project = chiudere un progetto.","chiudere affare accordo progetto lavoro chiusura close"],
- ["I try to avoid the traffic.","Cerco di evitare il traffico.","Let's avoid the rush hour.","Evitiamo l'ora di punta.","","evitare avoid"]
+ ["I try to avoid the traffic.","Cerco di evitare il traffico.","Let's avoid the rush hour.","Evitiamo l'ora di punta.","","evitare avoid"],
+ ["I go running", "Vado a correre", "I go running every morning before work.", "Vado a correre ogni mattina prima di lavorare.", "Per l'attività si dice go running, come go swimming.", "correre corro corri corre corriamo corrono corsa jogging footing"],
+ ["She runs a small shop.", "Gestisce un piccolo negozio.", "She runs a small shop near the station.", "Gestisce un piccolo negozio vicino alla stazione.", "Run significa anche gestire, dirigere.", "gestire gestisce dirigere negozio attività"],
+ ["I swim", "Nuoto", "I swim twice a week at the local pool.", "Nuoto due volte a settimana nella piscina del paese.", "Fare una nuotata si dice go for a swim.", "nuotare nuoto piscina nuotata mare"],
+ ["I clean the house", "Pulisco casa", "I clean the house every Saturday morning.", "Pulisco casa ogni sabato mattina.", "Fare le pulizie si dice anche do the cleaning.", "pulire pulisco pulizie casa riordinare"],
+ ["I do the washing", "Faccio il bucato", "I do the washing on Sundays.", "Faccio il bucato la domenica.", "In inglese americano si dice do the laundry.", "lavare bucato lavatrice panni vestiti"],
+ ["I work from", "Lavoro da", "I work from home on Fridays.", "Il venerdì lavoro da casa.", "", "lavorare lavoro lavora smart working casa"],
+ ["I study", "Studio", "I study English for half an hour every evening.", "Studio inglese per mezz'ora ogni sera.", "Study vale per materie e corsi: study law, study French.", "studiare studio studia esame corso"],
+ ["I read before bed.", "Leggo prima di dormire.", "I read for a few minutes before bed.", "Leggo qualche minuto prima di dormire.", "", "leggere leggo legge libro lettura"],
+ ["I grow", "Coltivo", "I grow tomatoes on my balcony.", "Coltivo pomodori sul balcone.", "Grow vale anche per crescere: children grow fast.", "coltivare crescere cresce piante pomodori balcone"]
 ]},
 { id:"viaggi", title:"Spostamenti e tempo", items:[
  ["I'm on my way.","Sto arrivando."],
@@ -281,7 +304,14 @@ window.CATEGORIES = [
  ["What time does it land?","A che ora atterra?","What time does your flight land?","A che ora atterra il tuo volo?","","atterrare atterraggio land"],
  ["The flight is delayed.","Il volo è in ritardo.","Our flight has been delayed by an hour.","Il nostro volo ha un'ora di ritardo.","","ritardo ritardato delayed"],
  ["I'm afraid of flying.","Ho paura di volare.","I'm afraid of flying, so I take the train.","Ho paura di volare, quindi prendo il treno.","","volare aereo paura fly"],
- ["Follow me, please.","Seguimi, per favore.","Just follow the signs to the station.","Segui le indicazioni per la stazione.","","seguire follow"]
+ ["Follow me, please.","Seguimi, per favore.","Just follow the signs to the station.","Segui le indicazioni per la stazione.","","seguire follow"],
+ ["I had to run to", "Ho dovuto correre per", "I had to run to catch the bus.", "Ho dovuto correre per prendere l'autobus.", "", "correre correre corro corsa fretta"],
+ ["Don't run!", "Non correre!", "Don't run, we have plenty of time.", "Non correre, abbiamo un sacco di tempo.", "", "correre corri corre corriamo corrono"],
+ ["The bus runs every ten minutes.", "L'autobus passa ogni dieci minuti.", "", "", "Con i mezzi di trasporto run significa fare servizio.", "passare passa corsa autobus treno"],
+ ["I walk to", "Vado a piedi a", "I walk to work every day.", "Vado al lavoro a piedi ogni giorno.", "Per dire 'a piedi' si usa anche on foot.", "camminare cammino camminata andare a piedi passeggiare"],
+ ["Can you drive?", "Sai guidare?", "I can drive, but I don't have a car.", "So guidare, ma non ho la macchina.", "", "guidare guido guida patente automobile"],
+ ["I ride my bike to", "Vado in bici a", "I ride my bike to school.", "Vado a scuola in bici.", "Ride vale per bici, moto e cavallo. In auto si dice drive.", "andare in bici pedalare cavalcare moto cavallo"],
+ ["I'm afraid of flying.", "Ho paura di volare.", "I'm afraid of flying, so I take the train.", "Ho paura di volare, quindi prendo il treno.", "", "volare volo aereo paura prendere aereo"]
 ]},
 { id:"cibo", title:"Cibo e ristoranti", items:[
  ["Could we have a table for two?","Potremmo avere un tavolo per due?"],
@@ -295,7 +325,11 @@ window.CATEGORIES = [
  ["That was delicious.","Era buonissimo."],
  ["I'm preparing dinner.","Sto preparando la cena.","I'll prepare something light.","Preparo qualcosa di leggero.","","preparare prepararsi prepare"],
  ["Shall we share a dessert?","Dividiamo un dolce?","Can we share a taxi?","Possiamo dividere un taxi?","","condividere dividere share"],
- ["I'd like to order, please.","Vorrei ordinare, per favore.","Are you ready to order?","Siete pronti per ordinare?","","ordinare order"]
+ ["I'd like to order, please.","Vorrei ordinare, per favore.","Are you ready to order?","Siete pronti per ordinare?","","ordinare order"],
+ ["I'm cooking", "Sto cucinando", "I'm cooking dinner for six people tonight.", "Stasera cucino la cena per sei persone.", "Cook vale anche per cuocere un alimento.", "cucinare cucino cucina cuocere cena"],
+ ["Cut it into", "Taglialo a", "Cut the onion into small pieces.", "Taglia la cipolla a pezzetti.", "", "tagliare taglia taglio pezzi pezzetti cipolla"],
+ ["Wash the vegetables first.", "Lava prima le verdure.", "Wash the vegetables first, then cut them.", "Lava prima le verdure, poi tagliale.", "", "lavare lava lavo verdure insalata"],
+ ["Boil the pasta for", "Cuoci la pasta per", "Boil the pasta for ten minutes.", "Cuoci la pasta per dieci minuti.", "Boil indica la cottura in acqua bollente.", "bollire bolle bollito cuocere pasta acqua"]
 ]},
 { id:"acquisti", title:"Acquisti e alloggio", items:[
  ["I'm looking for…","Sto cercando…","I'm looking for a jacket.","Sto cercando una giacca."],
@@ -343,7 +377,15 @@ window.CATEGORIES = [
  ["Where did you hide it?","Dove l'hai nascosto?","She hid the key under the mat.","Ha nascosto la chiave sotto lo zerbino.","","nascondere nascondersi hide"],
  ["Can you fix it?","Puoi aggiustarlo?","Can you fix my bike?","Puoi aggiustare la mia bici?","","riparare aggiustare sistemare fix"],
  ["He's always complaining.","Si lamenta sempre.","He's always complaining about the weather.","Si lamenta sempre del tempo.","","lamentarsi lagnarsi reclamare complain"],
- ["My wallet has disappeared.","Il mio portafoglio è sparito.","The cat disappeared three days ago.","Il gatto è scomparso tre giorni fa.","","sparire scomparire svanire disappear"]
+ ["My wallet has disappeared.","Il mio portafoglio è sparito.","The cat disappeared three days ago.","Il gatto è scomparso tre giorni fa.","","sparire scomparire svanire disappear"],
+ ["I fell", "Sono caduto", "I fell on the ice and hurt my knee.", "Sono caduto sul ghiaccio e mi sono fatto male al ginocchio.", "fall - fell - fallen, verbo irregolare.", "cadere caduto cado caduta ginocchio"],
+ ["I fell asleep", "Mi sono addormentato", "I fell asleep on the sofa.", "Mi sono addormentato sul divano.", "Fall asleep significa addormentarsi.", "addormentarsi addormentato sonno dormire divano"],
+ ["The door won't open.", "La porta non si apre.", "The door won't open. I think it's stuck.", "La porta non si apre. Credo che sia bloccata.", "Won't con una cosa significa che non vuole funzionare.", "aprire aprirsi apre porta bloccata"],
+ ["I cut my finger.", "Mi sono tagliato un dito.", "I cut my finger while cooking.", "Mi sono tagliato un dito mentre cucinavo.", "cut - cut - cut, il verbo non cambia.", "tagliare tagliato taglio dito ferita"],
+ ["It hurts.", "Fa male.", "My back hurts when I sit for too long.", "Mi fa male la schiena quando sto seduto troppo a lungo.", "Con le parti del corpo si dice my head hurts, my back hurts.", "fare male dolore dolere schiena mal di"],
+ ["I hurt my", "Mi sono fatto male a", "I hurt my ankle playing football.", "Mi sono fatto male alla caviglia giocando a calcio.", "hurt - hurt - hurt, il verbo non cambia.", "farsi male ferirsi caviglia calcio"],
+ ["I can't breathe", "Non riesco a respirare", "I can't breathe through my nose.", "Non riesco a respirare con il naso.", "", "respirare respiro naso raffreddore fiato"],
+ ["I've been coughing", "Tossisco da", "I've been coughing since last night.", "Tossisco da ieri sera.", "Con since si usa il present perfect continuous.", "tossire tosse tossisco raffreddore"]
 ]},
 { id:"capire", title:"Capire e farsi capire", items:[
  ["Sorry, I didn't catch that.","Scusa, non ho capito quello che hai detto."],
@@ -358,7 +400,9 @@ window.CATEGORIES = [
  ["Just to confirm, you want me to…, right?","Per conferma, vuoi che io…, giusto?"],
  ["I can't hear you.","Non ti sento.","Sorry, I couldn't hear you.","Scusa, non ti ho sentito.","Hear = sentire con le orecchie.","sentire udire hear"],
  ["Can you write it down?","Puoi scriverlo?","Could you write down your number?","Potresti scrivere il tuo numero?","","scrivere write"],
- ["Can you describe it?","Puoi descriverlo?","Can you describe the man?","Puoi descrivere l'uomo?","","descrivere describe"]
+ ["Can you describe it?","Puoi descriverlo?","Can you describe the man?","Puoi descrivere l'uomo?","","descrivere describe"],
+ ["Could you read this for me?", "Potresti leggerlo per me?", "Could you read this for me? I forgot my glasses.", "Potresti leggerlo per me? Ho dimenticato gli occhiali.", "", "leggere leggi leggerlo occhiali"],
+ ["Could you write it down?", "Potresti scriverlo?", "Could you write it down, please?", "Potresti scrivermelo, per favore?", "Write down significa annotare, mettere per iscritto.", "scrivere scrivilo annotare appuntare"]
 ]},
 { id:"phrasal", title:"Phrasal verbs di tutti i giorni", items:[
  ["come over","passare da qualcuno","Do you want to come over later?","Ti va di passare da me più tardi?"],

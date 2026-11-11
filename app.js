@@ -22,8 +22,20 @@
   }
   var sectionsMain = buildSections(window.SECTIONS);
   var sectionsPhrasal = buildSections(window.SECTIONS_PHRASAL);
+  var TOPIC_QUERIES = {
+    idiomi: ["modi di dire", "modo di dire", "idiomi", "idioma", "idioms", "idiom"],
+    phrasal: ["phrasal", "frasi", "frasal", "frasal verb", "frasal verbs", "phrasal verb", "phrasal verbs", "verbi frasali", "verbo frasale"]
+  };  
+  function topicOf() {
+    var q = norm(query).trim();
+    for (var k in TOPIC_QUERIES) {
+      if (TOPIC_QUERIES[k].indexOf(q) >= 0) return k;
+    }
+    return "";
+  }
   function activeSections() {
     if (view === "phrasal") return sectionsPhrasal;
+    if (topicOf()) return sectionsPhrasal;
     if (view === "fav") return sectionsMain.concat(sectionsPhrasal);
     return sectionsMain;
   }
@@ -51,6 +63,8 @@
     if (view === "fav" && !favs.has(it.id)) return false;
     var q = norm(query).trim();
     if (!q) return true;
+    var tp = topicOf();
+    if (tp) return it.cat.indexOf(tp) === 0;
     var hay = it.en + " " + it.it + " " + it.ex + " " + it.exIt + it.kw;
     if (q.length >= 3) hay += " " + it.title;
     return norm(hay).indexOf(q) >= 0;
@@ -72,6 +86,7 @@
   }
 
   function render() {
+    syncTabs();
     var searching = !!norm(query).trim();
     var html = "", total = 0;
     var sections = activeSections();
@@ -156,8 +171,34 @@
   }
 
   qEl.addEventListener("input", function () { query = qEl.value; render(); });
+  (function () {
+    var wrap = qEl.parentNode;
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "clear";
+    btn.setAttribute("aria-label", "Cancella ricerca");
+    btn.textContent = "✕";
+    btn.hidden = true;
+    wrap.appendChild(btn);
+    function sync() { btn.hidden = !qEl.value; }
+    qEl.addEventListener("input", sync);
+    btn.addEventListener("click", function () {
+      qEl.value = "";
+      query = "";
+      sync();
+      render();
+      qEl.focus();
+    });
+  })();
   $("#tab-all").addEventListener("click", function () { setView("all"); });
   $("#tab-fav").addEventListener("click", function () { setView("fav"); });
+  function syncTabs() {
+    var eff = (view !== "fav" && topicOf()) ? "phrasal" : view;
+    ["all", "fav", "phrasal"].forEach(function (k) {
+      var b = document.getElementById("tab-" + k);
+      if (b) b.classList.toggle("active", eff === k);
+    });
+  }
   function setView(v) {
     view = v;
     ["all", "fav", "phrasal"].forEach(function (k) {
