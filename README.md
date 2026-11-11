@@ -109,3 +109,15 @@ Le traduzioni indicano il significato naturale nel contesto, non sempre la corri
 ## Nuove modifiche applicabili
 
 - **Pulsanti-etichetta per saltare ai gruppi.** Se un giorno le frasi diventassero molte di più (diverse centinaia), una soluzione più comoda di un secondo livello di toggle sarebbe una fila di piccoli pulsanti-etichetta ("Organizzarsi", "Accettare", "Futuro") sotto la barra di ricerca, per saltare direttamente al gruppo. Con la quantità attuale (circa 230 frasi) sarebbe già troppo.
+- **Altri verbi dall'Oxford 3000:**
+- **Sezione "Parole" (portafoglio, foglie)** e, se i dati crescono molto, il passaggio a Supabase: idee future, non urgenti. nuovi gruppi, per esempio comunicazione, spostamenti e soldi.
+
+- **Modi di dire:** arricchire i dati con parole italiane per la ricerca, altri modi di dire e note più complete.
+
+- **Altri verbi dall'Oxford 3000:** nuovi gruppi, per esempio comunicazione, spostamenti e soldi.
+
+- **Irregolari:** restano come sono, finché non diventano un problema.
+
+- **Sezione "Parole" (portafoglio, foglie):** idea futura, non urgente.
+
+- **Lingue multiple con le bandiere: in pausa.**
