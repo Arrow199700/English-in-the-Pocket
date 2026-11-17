@@ -23,8 +23,8 @@
   var sectionsMain = buildSections(window.SECTIONS);
   var sectionsPhrasal = buildSections(window.SECTIONS_PHRASAL);
   var TOPIC_QUERIES = {
-    idiomi: ["modi di dire", "modo di dire", "idiomi", "idioma", "idioms", "idiom"],
-    phrasal: ["phrasal", "frasi", "frasal", "frasal verb", "frasal verbs", "phrasal verb", "phrasal verbs", "verbi frasali", "verbo frasale"]
+    idiomi: ["modi di dire","modo di", "modi di", "modo di dire", "idiomi", "idioma", "idioms", "idiom"],
+    phrasal: ["phrasal", "frasi", "frasal", "frasal verb", "frasal verbs", "phrasal verb", "phrasal verbs", "phras" , "verb", "verbs","verbi frasali", "verbo frasale"]
   };  
   function topicOf() {
     var q = norm(query).trim();
@@ -34,9 +34,10 @@
     return "";
   }
   function activeSections() {
+    if (norm(query).trim() || view === "fav") {
+      return sectionsMain.concat(sectionsPhrasal);
+    }
     if (view === "phrasal") return sectionsPhrasal;
-    if (topicOf()) return sectionsPhrasal;
-    if (view === "fav") return sectionsMain.concat(sectionsPhrasal);
     return sectionsMain;
   }
 

@@ -121,3 +121,4 @@ Le traduzioni indicano il significato naturale nel contesto, non sempre la corri
 - **Sezione "Parole" (portafoglio, foglie):** idea futura, non urgente.
 
 - **Lingue multiple con le bandiere: in pausa.**
+

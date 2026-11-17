@@ -10,7 +10,10 @@ window.CATEGORIES = [
  ["I'm really into…","Mi appassiona… / Mi piace molto…","I'm really into photography.","Sono appassionato di fotografia.","Informale."],
  ["I'm not much of a…","Non sono un gran…","I'm not much of a cook.","Non sono un gran cuoco."],
  ["What about you?","E tu?"],
- ["I work as a", "Lavoro come", "I work as a nurse.", "Lavoro come infermiera.", "Per la professione si usa as, non like.", "lavoro lavorare professione mestiere impiego"]
+ ["I work as a", "Lavoro come", "I work as a nurse.", "Lavoro come infermiera.", "Per la professione si usa as, non like.", "lavoro lavorare professione mestiere impiego"],
+ ["I earn…", "Guadagno…", "I earn enough to live comfortably.", "Guadagno abbastanza per vivere bene.", "Earn = guadagnare con il lavoro.", "guadagnare guadagno stipendio lavoro"],
+ ["I'd like to apply for…", "Vorrei fare domanda per…", "I'd like to apply for the job.", "Vorrei fare domanda per quel lavoro.", "Apply for = fare domanda per, candidarsi a.", "candidarsi domanda lavoro posizione"],
+ ["I design…", "Progetto…", "I design websites for small businesses.", "Progetto siti web per piccole imprese.", "Design = progettare, ideare. Per disegnare a mano si usa draw.", "progettare ideare disegnare sito web lavoro"]
 ]},
 { id:"conoscere", title:"Conoscere qualcuno", items:[
  ["How's it going?","Come va?","","","Informale."],
@@ -33,7 +36,7 @@ window.CATEGORIES = [
  ["Welcome!","Benvenuto!","Welcome to our home.","Benvenuto a casa nostra.","Anche: benvenuta / benvenuti."],
  ["Goodbye! / Bye!","Arrivederci! / Ciao!","Goodbye, see you tomorrow!","Arrivederci, a domani!"],
  ["Have a nice day!","Buona giornata!","Thanks, you too!","Grazie, altrettanto!"],
- ["Good night","Buonanotte","Good night, sleep well.","Buonanotte, dormi bene.","Si dice solo quando si va a dormire."]
+ ["Good night","Buonanotte","Good night, sleep well.","Buonanotte, dormi bene.","Si dice per salutare la sera, di solito prima di andare a dormire. All'arrivo si dice good evening.","buonanotte notte sera saluto dormire"]
 ]},
 { id:"rapporti", title:"Rapporti e reazioni", items:[
  ["Thanks for…","Grazie per…","Thanks for helping me.","Grazie per avermi aiutato.","Dopo “thanks for” il verbo prende -ing."],
@@ -56,7 +59,10 @@ window.CATEGORIES = [
  ["Let's close this chapter.","Chiudiamo questo capitolo.","It's time to close that chapter of my life.","È ora di chiudere quel capitolo della mia vita.","","chiudere chiusura capitolo voltare pagina close"],
  ["Don't shout, I can hear you.","Non urlare, ti sento.","He shouted at the referee.","Ha urlato contro l'arbitro.","","gridare urlare shout"],
  ["Don't cry.","Non piangere.","The baby won't stop crying.","Il bambino non smette di piangere.","","piangere cry"],
- ["Did you notice her new haircut?","Hai notato il suo nuovo taglio di capelli?","I didn't notice you came in.","Non mi sono accorto che eri entrato.","","notare accorgersi notice"]
+ ["Did you notice her new haircut?","Hai notato il suo nuovo taglio di capelli?","I didn't notice you came in.","Non mi sono accorto che eri entrato.","","notare accorgersi notice"],
+ ["I'll reply tonight.", "Rispondo stasera.", "I'll reply to your message tonight.", "Rispondo al tuo messaggio stasera.", "Reply to = rispondere a un messaggio o a una domanda.", "rispondere risposta messaggio email"],
+ ["I promise…", "Prometto…", "I promise I'll call you tomorrow.", "Prometto che ti chiamo domani.", "", "promettere prometto promessa"],
+ ["I didn't recognize you.", "Non ti avevo riconosciuto.", "I didn't recognize you with the beard.", "Non ti avevo riconosciuto con la barba.", "In inglese britannico si scrive recognise.", "riconoscere riconosciuto barba"]
 ]},
 { id:"proporre", title:"Organizzarsi e proporre", items:[
  ["Do you feel like…?","Ti va di…?","Do you feel like going out?","Ti va di uscire?","Dopo “feel like” si usa -ing."],
@@ -71,10 +77,11 @@ window.CATEGORIES = [
  ["Do you want to go to the cinema?","Ti va di andare al cinema?","Is there a good film on at the cinema?","Danno un bel film al cinema?"],
  ["Have you seen that film?","Hai visto quel film?","It's a really good film.","È un film davvero bello."],
  ["Is the museum open today?","Il museo è aperto oggi?","The museum is closed on Mondays.","Il museo è chiuso il lunedì."],
- ["Do you want to watch a film?","Vuoi guardare un film?","We watched a film last night.","Abbiamo guardato un film ieri sera.","Look at = oggetto fermo; watch = qualcosa in movimento.","guardare watch"],
+ ["Do you want to watch a film?","Vuoi guardare un film?","We watched a film last night.","Abbiamo guardato un film ieri sera.","Look at = rivolgere lo sguardo; watch = guardare con attenzione per un po' di tempo, di solito qualcosa che si muove o cambia. Per un film al cinema si dice anche see.","guardare watch"],
  ["I'd like to invite you to…","Vorrei invitarti a…","She invited us to dinner.","Ci ha invitati a cena.","","invitare invite"],
  ["I suggest…","Propongo di… / Suggerisco di…","I suggest taking a taxi.","Propongo di prendere un taxi.","Si usa suggest + -ing.","suggerire proporre suggest"],
- ["The sun is shining.", "C'è il sole.", "The sun is shining, so let's go out.", "C'è il sole, quindi usciamo.", "Alla lettera: il sole brilla.", "splendere brillare sole luce bel tempo"]
+ ["The sun is shining.", "C'è il sole.", "The sun is shining, so let's go out.", "C'è il sole, quindi usciamo.", "Alla lettera: il sole brilla.", "splendere brillare sole luce bel tempo"],
+ ["Let's arrange a time.", "Fissiamo un orario.", "Let's arrange a time to meet.", "Fissiamo un orario per vederci.", "Arrange = organizzare, fissare.", "organizzare fissare accordarsi appuntamento"]
 ]},
 { id:"accettare", title:"Accettare e rifiutare", items:[
  ["I'd love to.","Mi piacerebbe molto. / Volentieri."],
@@ -98,7 +105,8 @@ window.CATEGORIES = [
  ["I might…","Potrei…","I might go out later.","Potrei uscire più tardi."],
  ["I haven't decided yet.","Non ho ancora deciso."],
  ["I'll see how I feel.","Vedrò come mi sento."],
- ["It's going to rain.", "Sta per piovere.", "Take an umbrella. It's going to rain.", "Prendi l'ombrello. Sta per piovere.", "", "piovere pioggia pioverà ombrello tempo"]
+ ["It's going to rain.", "Sta per piovere.", "Take an umbrella. It's going to rain.", "Prendi l'ombrello. Sta per piovere.", "", "piovere pioggia pioverà ombrello tempo"],
+ ["I want to become…", "Voglio diventare…", "She wants to become a teacher.", "Lei vuole diventare insegnante.", "become - became - become, verbo irregolare.", "diventare divento diventato insegnante"]
 ]},
 { id:"gusti", title:"Gusti ed emozioni", items:[
  ["I feel…","Mi sento…","I feel a bit tired.","Mi sento un po' stanco."],
@@ -113,14 +121,15 @@ window.CATEGORIES = [
  ["It bothers me when…","Mi dà fastidio quando…","It bothers me when people interrupt me.","Mi dà fastidio quando mi interrompono."],
  ["I'm happy for you.","Sono felice per te."],
  ["How do you feel?","Come ti senti?","How do you feel today?","Come ti senti oggi?"],
- ["I feel…","Mi sento…","I feel much better.","Mi sento molto meglio."],
  ["I'm hungry / thirsty.","Ho fame / Ho sete.","I'm hungry, shall we eat?","Ho fame, mangiamo?","In inglese si usa “to be”, non “to have”."],
  ["I'm cold / hot.","Ho freddo / Ho caldo.","Can you close the window? I'm cold.","Puoi chiudere la finestra? Ho freddo."],
  ["I'm happy / sad / angry.","Sono felice / triste / arrabbiato.","I'm so happy for you!","Sono così felice per te!"],
  ["I'm worried.","Sono preoccupato.","I'm worried about the exam.","Sono preoccupato per l'esame."],
  ["I really enjoyed it.","Mi è piaciuto molto.","I really enjoyed the concert.","Mi è piaciuto molto il concerto.","Si dice enjoy + -ing: I enjoy cooking.","godersi divertirsi enjoy"],
  ["I don't feel well.","Non mi sento bene. / Sto male.","I don't feel well, I think I'll go home.","Non mi sento bene, credo che tornerò a casa."],
- ["You seem tired.","Sembri stanco.","It seems like a good idea.","Sembra una buona idea.","","sembrare apparire seem"]
+ ["You seem tired.","Sembri stanco.","It seems like a good idea.","Sembra una buona idea.","","sembrare apparire seem"],
+ ["I just want to relax.", "Voglio solo rilassarmi.", "After work, I just want to relax at home.", "Dopo il lavoro voglio solo rilassarmi a casa.", "", "rilassarsi rilassare relax riposo"],
+ ["I like to create…", "Mi piace creare…", "I like to create my own recipes.", "Mi piace creare le mie ricette.", "Create = creare, inventare qualcosa di nuovo.", "creare creo inventare ricette"]
 ]},
 { id:"opinioni", title:"Opinioni, dubbi e decisioni", items:[
  ["I think…","Penso che…","I think it's a good idea.","Penso che sia una buona idea."],
@@ -141,7 +150,9 @@ window.CATEGORIES = [
  ["I can imagine.","Posso immaginare.","Imagine living by the sea.","Immagina di vivere al mare.","","immaginare imagine"],
  ["I guess so.","Suppongo di sì. / Credo di sì.","Guess what? I got the job.","Indovina? Ho ottenuto il lavoro.","","indovinare supporre guess"],
  ["We need to discuss…","Dobbiamo discutere di…","We need to discuss the plan.","Dobbiamo discutere del piano.","Non si dice “discuss about”.","discutere parlare di discuss"],
- ["I didn't expect that.","Non me l'aspettavo.","I'm expecting a call.","Aspetto una telefonata.","Falso amico: “aspettare” è wait.","aspettarsi prevedere expect"]
+ ["I didn't expect that.","Non me l'aspettavo.","I'm expecting a call.","Aspetto una telefonata.","Expect = aspettarsi o prevedere che qualcosa accada. Per l'attesa generica si usa wait: Wait for me.","aspettarsi prevedere aspettare attendere expect"],
+ ["I disagree.", "Non sono d'accordo.", "I disagree with you, but I understand your point.", "Non sono d'accordo con te, ma capisco il tuo punto di vista.", "Disagree with = non essere d'accordo con.", "non essere d'accordo disaccordo dissentire"],
+ ["It doesn't matter.", "Non importa.", "It doesn't matter if we're late.", "Non importa se siamo in ritardo.", "Matter = importare, avere importanza.", "importare non importa contare"]
 ]},
 { id:"bisogni", title:"Volere e avere bisogno", items:[
  ["I need to…","Devo… / Ho bisogno di…","I need to get some sleep.","Ho bisogno di dormire un po'.","Dopo “need to” si usa il verbo base."],
@@ -160,7 +171,9 @@ window.CATEGORIES = [
  ["I couldn't…","Non riuscivo a… / Non sono riuscito a…","I couldn't sleep last night.","Stanotte non sono riuscito a dormire."],
  ["I find it hard to…","Faccio fatica a…","I find it hard to concentrate.","Faccio fatica a concentrarmi."],
  ["I'm getting better at…","Sto migliorando in…","I'm getting better at speaking English.","Sto migliorando nel parlare inglese."],
- ["It's worth trying.","Vale la pena provare.","It's difficult, but it's worth trying.","È difficile, ma vale la pena provare."]
+ ["It's worth trying.","Vale la pena provare.","It's difficult, but it's worth trying.","È difficile, ma vale la pena provare."],
+ ["I want to improve my…", "Voglio migliorare il mio…", "I want to improve my English.", "Voglio migliorare il mio inglese.", "", "migliorare miglioro migliorarsi inglese"],
+ ["I practise… every day.", "Mi esercito a… ogni giorno.", "I practise speaking English every day.", "Mi esercito a parlare inglese ogni giorno.", "Practise è l'ortografia britannica del verbo; in inglese americano si scrive practice.", "esercitarsi allenarsi praticare esercitare"]
 ]},
 { id:"aiuto", title:"Chiedere e offrire aiuto", items:[
  ["Could you help me with…?","Potresti aiutarmi con…?","Could you help me with this bag?","Potresti aiutarmi con questa borsa?"],
@@ -191,7 +204,17 @@ window.CATEGORIES = [
  ["Could you lend me ten euros?","Potresti prestarmi dieci euro?","Can you lend me your umbrella?","Puoi prestarmi il tuo ombrello?","","prestare lend"],
  ["Please sit down.", "Prego, si accomodi. Siediti.", "Please sit down. I'll be right with you.", "Si accomodi pure. Sono da lei tra un attimo.", "", "sedersi siediti sedere accomodarsi sedia"],
  ["Could you teach me how to?", "Potresti insegnarmi a?", "Could you teach me how to play chess?", "Potresti insegnarmi a giocare a scacchi?", "", "insegnare insegnami imparare scacchi giocare"],
- ["You should rest.", "Dovresti riposarti.", "You look tired. You should rest.", "Sembri stanco. Dovresti riposarti.", "Rest vale come verbo e come nome: have a rest.", "riposare riposarti riposo pausa"]
+ ["You should rest.", "Dovresti riposarti.", "You look tired. You should rest.", "Sembri stanco. Dovresti riposarti.", "Rest vale come verbo e come nome: have a rest.", "riposare riposarti riposo pausa"],
+ ["Can I borrow your charger?", "Posso prendere in prestito il tuo caricabatterie?", "Can I borrow your charger? Mine is at home.", "Posso prendere in prestito il tuo caricabatterie? Il mio è a casa.", "Borrow = prendere in prestito. Borrow something from someone = prendere qualcosa in prestito da qualcuno.", "prendere in prestito prestare prestito caricabatterie caricare telefono"],
+ ["I'll lend you mine.", "Ti presto il mio.", "You don't need to buy a drill. I'll lend you mine.", "Non serve che compri un trapano. Ti presto il mio.", "Lend = dare in prestito. lend - lent - lent.", "prestare presto prestito dare trapano attrezzi"],
+ ["Could you pass me the salt?", "Potresti passarmi il sale?", "Could you pass me the salt? It's next to your plate.", "Potresti passarmi il sale? È accanto al tuo piatto.", "Pass someone something = passare qualcosa a qualcuno.", "passare passami porgere porgimi sale tavola"],
+ ["Can I use…?", "Posso usare…?", "Can I use your phone? Mine is dead.", "Posso usare il tuo telefono? Il mio è scarico.", "Use = usare, utilizzare.", "usare utilizzare usi uso telefono"],
+ ["Could you carry this?", "Puoi portare questo?", "Could you carry this bag for me? It's heavy.", "Puoi portarmi questa borsa? È pesante.", "Carry = portare in mano o addosso, trasportare.", "portare trasportare reggere borsa pesante"],
+ ["Could you fill this?", "Potresti riempire questo?", "Could you fill this bottle with water?", "Potresti riempire questa bottiglia d'acqua?", "Fill up = riempire fino in fondo.", "riempire riempi bottiglia acqua pieno"],
+ ["Could you draw me a map?", "Potresti disegnarmi una mappa?", "Could you draw me a map? I'm bad with directions.", "Potresti disegnarmi una mappa? Mi oriento male.", "", "disegnare disegna mappa cartina schizzo"],
+ ["Let me introduce you to…", "Lascia che ti presenti…", "Let me introduce you to my sister, Anna.", "Lascia che ti presenti mia sorella Anna.", "Introduce = presentare qualcuno a qualcuno.", "presentare presento conoscere qualcuno sorella"],
+ ["Could you answer the phone?", "Puoi rispondere al telefono?", "Could you answer the phone? My hands are full.", "Puoi rispondere al telefono? Ho le mani occupate.", "Si dice answer the phone, senza to.", "rispondere risposta telefono rispondi"],
+ ["Can I print this?", "Posso stampare questo?", "Can I print this here?", "Posso stamparlo qui?", "", "stampare stampa stampante documento"]
 ]},
 { id:"passato", title:"Raccontare il passato", items:[
  ["I went to…","Sono andato a…","I went to a concert last night.","Ieri sera sono andato a un concerto.","go → went → gone"],
@@ -218,7 +241,10 @@ window.CATEGORIES = [
  ["I learned", "Ho imparato", "I learned to swim when I was six.", "Ho imparato a nuotare a sei anni.", "Si dice learned o learnt.", "imparare imparato apprendere"],
  ["I taught", "Ho insegnato", "I taught English for two years.", "Ho insegnato inglese per due anni.", "teach - taught - taught, verbo irregolare.", "insegnare insegnato insegnante professore"],
  ["It rained all day.", "Ha piovuto tutto il giorno.", "It rained all day, so we stayed in.", "Ha piovuto tutto il giorno, quindi siamo rimasti in casa.", "", "piovere piovuto pioggia temporale"],
- ["It snowed", "Ha nevicato", "It snowed a lot last winter.", "L'inverno scorso ha nevicato molto.", "", "nevicare nevicato neve inverno"]
+ ["It snowed", "Ha nevicato", "It snowed a lot last winter.", "L'inverno scorso ha nevicato molto.", "", "nevicare nevicato neve inverno"],
+ ["Who won?", "Chi ha vinto?", "Who won the match?", "Chi ha vinto la partita?", "win - won - won, verbo irregolare.", "vincere vinto vittoria partita"],
+ ["I lost track of time.", "Ho perso la nozione del tempo.", "I lost track of time and missed the bus.", "Ho perso la nozione del tempo e ho perso l'autobus.", "Lose track of = perdere il filo o il conto.", "perdere nozione tempo filo conto"],
+ ["We painted the kitchen.", "Abbiamo dipinto la cucina.", "We painted the kitchen white last weekend.", "Lo scorso fine settimana abbiamo dipinto la cucina di bianco.", "Paint = tinteggiare una parete o dipingere un quadro.", "dipingere tinteggiare imbiancare pittura cucina parete"]
 ]},
 { id:"routine", title:"Routine e cambiamenti", items:[
  ["I usually…","Di solito…","I usually have breakfast at home.","Di solito faccio colazione a casa."],
@@ -248,7 +274,24 @@ window.CATEGORIES = [
  ["I work from", "Lavoro da", "I work from home on Fridays.", "Il venerdì lavoro da casa.", "", "lavorare lavoro lavora smart working casa"],
  ["I study", "Studio", "I study English for half an hour every evening.", "Studio inglese per mezz'ora ogni sera.", "Study vale per materie e corsi: study law, study French.", "studiare studio studia esame corso"],
  ["I read before bed.", "Leggo prima di dormire.", "I read for a few minutes before bed.", "Leggo qualche minuto prima di dormire.", "", "leggere leggo legge libro lettura"],
- ["I grow", "Coltivo", "I grow tomatoes on my balcony.", "Coltivo pomodori sul balcone.", "Grow vale anche per crescere: children grow fast.", "coltivare crescere cresce piante pomodori balcone"]
+ ["I grow", "Coltivo", "I grow tomatoes on my balcony.", "Coltivo pomodori sul balcone.", "Grow vale anche per crescere: children grow fast.", "coltivare crescere cresce piante pomodori balcone"],
+ ["Hold the ladder steady.", "Tieni ferma la scala.", "Could you hold the ladder steady while I climb up?", "Potresti tenere ferma la scala mentre salgo?", "Ladder = scala a pioli; stairs = scale di un edificio.", "scala pioli salire tenere ferma reggere equilibrio"],
+ ["I dropped my keys.", "Mi sono cadute le chiavi.", "I dropped my keys while opening the door.", "Mi sono cadute le chiavi mentre aprivo la porta.", "Drop può indicare che qualcosa cade dalle mani, anche senza volerlo.", "cadere caduto cadute chiavi lasciare cadere mani"],
+ ["I spilled some water.", "Ho rovesciato un po' d'acqua.", "I spilled some water on the table.", "Ho rovesciato un po' d'acqua sul tavolo.", "Spill si usa quando un liquido fuoriesce o viene versato accidentalmente.", "rovesciare rovesciato versare versato acqua liquido tavolo"],
+ ["Pull the door towards you.", "Tira la porta verso di te.", "Don't push. Pull the door towards you.", "Non spingere. Tira la porta verso di te.", "Pull = tirare; push = spingere.", "tirare tira tiro spingere spingi porta"],
+ ["I can't reach the top shelf.", "Non arrivo al ripiano più alto.", "Could you help me? I can't reach the top shelf.", "Potresti aiutarmi? Non arrivo al ripiano più alto.", "Reach qui significa riuscire ad arrivare a qualcosa con la mano.", "raggiungere arrivare prendere ripiano alto scaffale mensola"],
+ ["Tie your shoelaces.", "Allacciati le scarpe.", "Tie your shoelaces before we leave.", "Allacciati le scarpe prima di uscire.", "Tie = legare, annodare. Shoelaces = lacci delle scarpe.", "allacciare allacciarsi allacciati legare annodare lacci scarpe"],
+ ["This screw needs tightening.", "Questa vite va stretta.", "This screw needs tightening. Have you got a screwdriver?", "Questa vite va stretta. Hai un cacciavite?", "Tighten = stringere; loosen = allentare.", "stringere stretto avvitare vite cacciavite allentare"],
+ ["Wipe the table with a damp cloth.", "Passa un panno umido sul tavolo.", "Wipe the table with a damp cloth after dinner.", "Passa un panno umido sul tavolo dopo cena.", "Wipe indica pulire o asciugare una superficie passando un panno o qualcosa di simile.", "pulire pulisci asciugare strofinare panno umido tavolo"],
+ ["Unplug the charger.", "Stacca il caricabatterie dalla presa.", "Unplug the charger and put it in your bag.", "Stacca il caricabatterie dalla presa e mettilo in borsa.", "Unplug = staccare la spina o scollegare un dispositivo.", "staccare scollegare togliere spina presa caricabatterie cavo"],
+ ["Fold the towels.", "Piega gli asciugamani.", "Fold the towels and put them in the cupboard.", "Piega gli asciugamani e mettili nell'armadio.", "Fold = piegare; unfold = aprire o dispiegare qualcosa di piegato.", "piegare piega piegato asciugamani bucato vestiti armadio"],
+ ["Let it dry.", "Lascialo asciugare.", "The towel is still wet. Let it dry before you put it away.", "L'asciugamano è ancora bagnato. Lascialo asciugare prima di metterlo via.", "Let + oggetto + verbo senza to: let it dry.", "asciugare asciugarsi asciutto bagnato umido asciugamano"],
+ ["I need to get dressed.", "Devo vestirmi.", "I need to get dressed before we leave.", "Devo vestirmi prima di uscire.", "Get dressed = vestirsi.", "vestirsi vestito vesto vestiti"],
+ ["I brush my teeth", "Mi lavo i denti", "I brush my teeth twice a day.", "Mi lavo i denti due volte al giorno.", "Alla lettera: spazzolo i denti.", "lavarsi i denti spazzolare spazzolino denti"],
+ ["I feed the cat", "Do da mangiare al gatto", "I feed the cat every morning.", "Do da mangiare al gatto ogni mattina.", "feed - fed - fed, verbo irregolare.", "dare da mangiare nutrire alimentare gatto cane animale"],
+ ["Someone is knocking.", "Qualcuno sta bussando.", "Someone is knocking at the door.", "Qualcuno sta bussando alla porta.", "Si dice knock at o on the door.", "bussare bussa porta"],
+ ["I need to download…", "Devo scaricare…", "I need to download the app.", "Devo scaricare l'app.", "Download = scaricare un file o un'app da internet.", "scaricare scarica app file internet"],
+ ["I want to lose weight.", "Voglio dimagrire.", "I want to lose a few kilos before summer.", "Voglio perdere qualche chilo prima dell'estate.", "Lose weight = dimagrire.", "dimagrire perdere peso chili dieta"]
 ]},
 { id:"viaggi", title:"Spostamenti e tempo", items:[
  ["I'm on my way.","Sto arrivando."],
@@ -277,7 +320,6 @@ window.CATEGORIES = [
  ["Let's go to the beach.","Andiamo in spiaggia.","The sea is really warm today.","Oggi il mare è davvero caldo.","beach = spiaggia; sea = mare."],
  ["We went to the mountains.","Siamo andati in montagna.","The view from the mountain was amazing.","La vista dalla montagna era bellissima."],
  ["The river is very cold.","Il fiume è molto freddo.","Is it safe to swim in the river?","È sicuro fare il bagno nel fiume?"],
- ["The sun is shining.","C'è il sole.","The sun sets at five in winter.","D'inverno il sole tramonta alle cinque."],
  ["There's a strong wind today.","Oggi c'è molto vento.","The wind is cold, take a jacket.","Il vento è freddo, prendi una giacca."],
  ["There isn't a cloud in the sky.","Non c'è una nuvola in cielo.","Those clouds look like rain.","Quelle nuvole fanno pensare alla pioggia."],
  ["Let's sit under that tree.","Sediamoci sotto quell'albero.","The leaves turn yellow in autumn.","In autunno le foglie diventano gialle.","leaf = foglia; plurale: leaves."],
@@ -303,7 +345,6 @@ window.CATEGORIES = [
  ["The bus leaves at… and arrives at…","L'autobus parte alle… e arriva alle…","The bus leaves at 9:15 and arrives at 11:00.","L'autobus parte alle 9:15 e arriva alle 11:00.","","partenza partire arrivo arrivare orario autobus treno"],
  ["What time does it land?","A che ora atterra?","What time does your flight land?","A che ora atterra il tuo volo?","","atterrare atterraggio land"],
  ["The flight is delayed.","Il volo è in ritardo.","Our flight has been delayed by an hour.","Il nostro volo ha un'ora di ritardo.","","ritardo ritardato delayed"],
- ["I'm afraid of flying.","Ho paura di volare.","I'm afraid of flying, so I take the train.","Ho paura di volare, quindi prendo il treno.","","volare aereo paura fly"],
  ["Follow me, please.","Seguimi, per favore.","Just follow the signs to the station.","Segui le indicazioni per la stazione.","","seguire follow"],
  ["I had to run to", "Ho dovuto correre per", "I had to run to catch the bus.", "Ho dovuto correre per prendere l'autobus.", "", "correre correre corro corsa fretta"],
  ["Don't run!", "Non correre!", "Don't run, we have plenty of time.", "Non correre, abbiamo un sacco di tempo.", "", "correre corri corre corriamo corrono"],
@@ -311,7 +352,13 @@ window.CATEGORIES = [
  ["I walk to", "Vado a piedi a", "I walk to work every day.", "Vado al lavoro a piedi ogni giorno.", "Per dire 'a piedi' si usa anche on foot.", "camminare cammino camminata andare a piedi passeggiare"],
  ["Can you drive?", "Sai guidare?", "I can drive, but I don't have a car.", "So guidare, ma non ho la macchina.", "", "guidare guido guida patente automobile"],
  ["I ride my bike to", "Vado in bici a", "I ride my bike to school.", "Vado a scuola in bici.", "Ride vale per bici, moto e cavallo. In auto si dice drive.", "andare in bici pedalare cavalcare moto cavallo"],
- ["I'm afraid of flying.", "Ho paura di volare.", "I'm afraid of flying, so I take the train.", "Ho paura di volare, quindi prendo il treno.", "", "volare volo aereo paura prendere aereo"]
+ ["I'm afraid of flying.", "Ho paura di volare.", "I'm afraid of flying, so I take the train.", "Ho paura di volare, quindi prendo il treno.", "", "volare volo aereo paura prendere aereo"],
+ ["I climbed the stairs.", "Ho salito le scale.", "I climbed the stairs to the third floor.", "Ho salito le scale fino al terzo piano.", "Climb si usa anche per salire le scale, non soltanto per scalare.", "salire scale salgo salito gradini piano"],
+ ["Go down the stairs.", "Scendi le scale.", "Go down the stairs and turn left.", "Scendi le scale e gira a sinistra.", "Go up the stairs = salire le scale; go down the stairs = scendere le scale.", "scendere scendi scendo sceso scale gradini"],
+ ["Shall we take the stairs?", "Facciamo le scale?", "The lift is busy. Shall we take the stairs?", "L'ascensore è occupato. Facciamo le scale?", "Take the stairs = fare le scale invece di usare l'ascensore.", "scale salire scendere ascensore fare le scale"],
+ ["Can I park here?", "Posso parcheggiare qui?", "Can I park here, or is it private?", "Posso parcheggiare qui o è privato?", "", "parcheggiare parcheggio posteggiare auto macchina"],
+ ["I need to pack.", "Devo fare la valigia.", "I need to pack before the taxi arrives.", "Devo fare la valigia prima che arrivi il taxi.", "Pack = fare la valigia; unpack = disfarla.", "fare la valigia valigia preparare bagaglio zaino"],
+ ["I'm lost.", "Mi sono perso.", "Excuse me, I'm lost. Where is the station?", "Scusi, mi sono perso. Dov'è la stazione?", "Lost qui è un aggettivo: non sai dove ti trovi.", "perso smarrito perdersi strada orientarsi"]
 ]},
 { id:"cibo", title:"Cibo e ristoranti", items:[
  ["Could we have a table for two?","Potremmo avere un tavolo per due?"],
@@ -329,7 +376,12 @@ window.CATEGORIES = [
  ["I'm cooking", "Sto cucinando", "I'm cooking dinner for six people tonight.", "Stasera cucino la cena per sei persone.", "Cook vale anche per cuocere un alimento.", "cucinare cucino cucina cuocere cena"],
  ["Cut it into", "Taglialo a", "Cut the onion into small pieces.", "Taglia la cipolla a pezzetti.", "", "tagliare taglia taglio pezzi pezzetti cipolla"],
  ["Wash the vegetables first.", "Lava prima le verdure.", "Wash the vegetables first, then cut them.", "Lava prima le verdure, poi tagliale.", "", "lavare lava lavo verdure insalata"],
- ["Boil the pasta for", "Cuoci la pasta per", "Boil the pasta for ten minutes.", "Cuoci la pasta per dieci minuti.", "Boil indica la cottura in acqua bollente.", "bollire bolle bollito cuocere pasta acqua"]
+ ["Boil the pasta for", "Cuoci la pasta per", "Boil the pasta for ten minutes.", "Cuoci la pasta per dieci minuti.", "Boil indica la cottura in acqua bollente.", "bollire bolle bollito cuocere pasta acqua"],
+ ["Peel the potatoes.", "Sbuccia le patate.", "Peel the potatoes and cut them into small pieces.", "Sbuccia le patate e tagliale a pezzetti.", "Peel = sbucciare, pelare.", "sbucciare sbuccia pelare pela patate buccia"],
+ ["Stir the soup.", "Mescola la zuppa.", "Stir the soup so it doesn't stick to the bottom.", "Mescola la zuppa perché non si attacchi al fondo.", "Stir = mescolare, per esempio con un cucchiaio.", "mescolare mescola girare zuppa minestra cucchiaio pentola fondo"],
+ ["Rinse the glass.", "Sciacqua il bicchiere.", "Rinse the glass to remove the soap.", "Sciacqua il bicchiere per togliere il sapone.", "Rinse = sciacquare, risciacquare.", "sciacquare risciacquare sciacqua bicchiere acqua sapone"],
+ ["Add a little salt.", "Aggiungi un po' di sale.", "Add a little salt and stir.", "Aggiungi un po' di sale e mescola.", "Add = aggiungere.", "aggiungere aggiungi sale ingrediente"],
+ ["It tastes good.", "Ha un buon sapore.", "This soup tastes really good.", "Questa zuppa ha davvero un buon sapore.", "Taste significa anche assaggiare: Taste this.", "sapore assaggiare gusto zuppa"]
 ]},
 { id:"acquisti", title:"Acquisti e alloggio", items:[
  ["I'm looking for…","Sto cercando…","I'm looking for a jacket.","Sto cercando una giacca."],
@@ -358,7 +410,14 @@ window.CATEGORIES = [
  ["They're building a new bridge.","Stanno costruendo un nuovo ponte.","The hotel was built in 1950.","L'hotel è stato costruito nel 1950.","","costruire build"],
  ["We close at six.","Chiudiamo alle sei.","The shop is closed on Sundays.","Il negozio è chiuso la domenica.","","chiudere chiusura orario chiuso close"],
  ["I'd like to close my account.","Vorrei chiudere il conto.","He closed his account last week.","Ha chiuso il conto la settimana scorsa.","","chiudere conto banca close"],
- ["Do you accept credit cards?","Accettate carte di credito?","We only accept cash.","Accettiamo solo contanti.","","accettare accept"]
+ ["Do you accept credit cards?","Accettate carte di credito?","We only accept cash.","Accettiamo solo contanti.","","accettare accept"],
+ ["Please complete this form.", "Completa questo modulo, per favore.", "Please complete this form and sign at the bottom.", "Completa questo modulo e firma in fondo.", "Complete = completare, compilare.", "completare compilare modulo moduli"],
+ ["Let's compare the prices.", "Confrontiamo i prezzi.", "Let's compare the prices before we buy.", "Confrontiamo i prezzi prima di comprare.", "", "confrontare paragonare prezzi prezzo comprare"],
+ ["Could you sign here?", "Potresti firmare qui?", "Could you sign here, please?", "Potresti firmare qui, per favore?", "Sign = firmare.", "firmare firma documento"],
+ ["It doesn't fit.", "Non mi sta (di misura).", "These shoes don't fit me.", "Queste scarpe non mi vanno bene.", "Fit parla della misura, non dello stile.", "stare misura taglia vestire calzare"],
+ ["Can you replace it?", "Puoi sostituirlo?", "Can you replace it with a new one?", "Puoi sostituirlo con uno nuovo?", "Replace = sostituire.", "sostituire cambiare nuovo"],
+ ["I'm saving money.", "Sto risparmiando.", "I'm saving money for a holiday.", "Sto risparmiando per una vacanza.", "Save significa anche salvare: save a file.", "risparmiare salvare mettere da parte soldi vacanza"],
+ ["This jacket is a bit loose.", "Questa giacca è un po' larga.", "This jacket is a bit loose on me.", "Questa giacca mi sta un po' larga.", "Loose = largo, non stretto. Non confonderlo con lose, perdere.", "largo ampio sciolto allentato giacca vestito"]
 ]},
 { id:"problemi", title:"Problemi e imprevisti", items:[
  ["There's something wrong with…","C'è qualcosa che non va con…","There's something wrong with my phone.","Il mio telefono ha qualcosa che non va."],
@@ -373,7 +432,6 @@ window.CATEGORIES = [
  ["I can't find my keys.","Non trovo le chiavi.","I locked my keys in the car.","Ho lasciato le chiavi chiuse in macchina."],
  ["Where is the nearest hospital?","Dov'è l'ospedale più vicino?","He's in hospital.","È in ospedale."],
  ["Is there a pharmacy near here?","C'è una farmacia qui vicino?","I need to go to the pharmacy.","Devo andare in farmacia."],
- ["The door won't open.","La porta non si apre.","Push the door, don't pull it.","Spingi la porta, non tirarla.","","spingere tirare push pull"],
  ["Where did you hide it?","Dove l'hai nascosto?","She hid the key under the mat.","Ha nascosto la chiave sotto lo zerbino.","","nascondere nascondersi hide"],
  ["Can you fix it?","Puoi aggiustarlo?","Can you fix my bike?","Puoi aggiustare la mia bici?","","riparare aggiustare sistemare fix"],
  ["He's always complaining.","Si lamenta sempre.","He's always complaining about the weather.","Si lamenta sempre del tempo.","","lamentarsi lagnarsi reclamare complain"],
@@ -385,7 +443,15 @@ window.CATEGORIES = [
  ["It hurts.", "Fa male.", "My back hurts when I sit for too long.", "Mi fa male la schiena quando sto seduto troppo a lungo.", "Con le parti del corpo si dice my head hurts, my back hurts.", "fare male dolore dolere schiena mal di"],
  ["I hurt my", "Mi sono fatto male a", "I hurt my ankle playing football.", "Mi sono fatto male alla caviglia giocando a calcio.", "hurt - hurt - hurt, il verbo non cambia.", "farsi male ferirsi caviglia calcio"],
  ["I can't breathe", "Non riesco a respirare", "I can't breathe through my nose.", "Non riesco a respirare con il naso.", "", "respirare respiro naso raffreddore fiato"],
- ["I've been coughing", "Tossisco da", "I've been coughing since last night.", "Tossisco da ieri sera.", "Con since si usa il present perfect continuous.", "tossire tosse tossisco raffreddore"]
+ ["I've been coughing…", "Tossisco da…", "I've been coughing since last night.", "Tossisco da ieri sera.", "Con since si usa il present perfect, non il presente: I've been coughing since…", "tossire tosse tossisco raffreddore da since"],
+ ["The tap is dripping.", "Il rubinetto gocciola.", "The tap is dripping even when it's turned off.", "Il rubinetto gocciola anche quando è chiuso.", "Tap è britannico; in inglese americano si usa faucet.", "gocciolare gocciola perdere perde acqua rubinetto goccia"],
+ ["The handle has come loose.", "La maniglia si è allentata.", "The handle has come loose. We need to tighten the screws.", "La maniglia si è allentata. Dobbiamo stringere le viti.", "Come loose = allentarsi, non essere più fissato saldamente.", "allentare allentarsi allentata maniglia vite viti fissare"],
+ ["I need to lie down.", "Ho bisogno di sdraiarmi.", "I don't feel well. I need to lie down.", "Non mi sento bene. Ho bisogno di sdraiarmi.", "lie - lay - lain. Non confonderlo con lie = mentire, che fa lied.", "sdraiarsi sdraiato stendersi coricarsi"],
+ ["Does this belong to you?", "Questo è tuo?", "Does this bag belong to you?", "Questa borsa è tua?", "Belong to = appartenere a.", "appartenere appartiene proprietà borsa"],
+ ["I can't connect to…", "Non riesco a collegarmi a…", "I can't connect to the Wi-Fi.", "Non riesco a collegarmi al Wi-Fi.", "Connect to = collegarsi a.", "collegarsi connettersi wifi internet rete"],
+ ["Someone stole my…", "Mi hanno rubato…", "Someone stole my bike.", "Mi hanno rubato la bici.", "steal - stole - stolen, verbo irregolare.", "rubare rubato furto bici"],
+ ["I burned the toast.", "Ho bruciato il toast.", "I burned the toast again.", "Ho bruciato di nuovo il toast.", "Il passato è burned o burnt.", "bruciare bruciato ustione toast"],
+ ["I always lose my keys.", "Perdo sempre le chiavi.", "I always lose my keys. I need a hook by the door.", "Perdo sempre le chiavi. Mi serve un gancio vicino alla porta.", "lose - lost - lost. Con una sola o è il verbo; loose con due o è un aggettivo.", "perdere perdo perso smarrire chiavi"]
 ]},
 { id:"capire", title:"Capire e farsi capire", items:[
  ["Sorry, I didn't catch that.","Scusa, non ho capito quello che hai detto."],
@@ -402,7 +468,12 @@ window.CATEGORIES = [
  ["Can you write it down?","Puoi scriverlo?","Could you write down your number?","Potresti scrivere il tuo numero?","","scrivere write"],
  ["Can you describe it?","Puoi descriverlo?","Can you describe the man?","Puoi descrivere l'uomo?","","descrivere describe"],
  ["Could you read this for me?", "Potresti leggerlo per me?", "Could you read this for me? I forgot my glasses.", "Potresti leggerlo per me? Ho dimenticato gli occhiali.", "", "leggere leggi leggerlo occhiali"],
- ["Could you write it down?", "Potresti scriverlo?", "Could you write it down, please?", "Potresti scrivermelo, per favore?", "Write down significa annotare, mettere per iscritto.", "scrivere scrivilo annotare appuntare"]
+ ["Could you write it down?", "Potresti scriverlo?", "Could you write it down, please?", "Potresti scrivermelo, per favore?", "Write down significa annotare, mettere per iscritto.", "scrivere scrivilo annotare appuntare"],
+ ["Could you repeat that?", "Potresti ripeterlo?", "Could you repeat the last part, please?", "Potresti ripetere l'ultima parte, per favore?", "Repeat = ripetere.", "ripetere ripeti ripetizione ultima parte"],
+ ["How do you spell…?", "Come si scrive…?", "How do you spell your surname?", "Come si scrive il tuo cognome?", "Spell = dire o scrivere le lettere una per una.", "scrivere compitare lettere cognome nome spelling"],
+ ["I understand, but…", "Capisco, ma…", "I understand the question, but I don't know the answer.", "Capisco la domanda, ma non so la risposta.", "understand - understood - understood, verbo irregolare.", "capire capisco capito comprendere"],
+ ["Let me check…", "Fammi controllare…", "Let me check the address.", "Fammi controllare l'indirizzo.", "Check = controllare, verificare.", "controllare verificare controlla indirizzo"],
+ ["Could you correct my mistakes?", "Potresti correggere i miei errori?", "Could you correct my mistakes, please?", "Potresti correggere i miei errori, per favore?", "", "correggere correggi errori sbagli correzione"]
 ]},
 { id:"phrasal", title:"Phrasal verbs di tutti i giorni", items:[
  ["come over","passare da qualcuno","Do you want to come over later?","Ti va di passare da me più tardi?"],
@@ -449,7 +520,27 @@ window.CATEGORIES = [
  ["look up","cercare (un'informazione)","Look it up in the dictionary.","Cercalo nel dizionario.","Con un pronome: look it up."],
  ["sit down","sedersi","Please sit down.","Siediti, per favore."],
  ["take out","tirare fuori / portare fuori","He took out his phone.","Ha tirato fuori il telefono."],
- ["come on","dai! / sbrigati","Come on, we're late!","Dai, siamo in ritardo!","Informale."]
+ ["come on","dai! / sbrigati","Come on, we're late!","Dai, siamo in ritardo!","Informale."],
+ ["bend down", "chinarsi", "I bent down to tie my shoes.", "Mi sono chinato per allacciarmi le scarpe.", "bend - bent - bent. Bend down indica abbassare il corpo piegandosi.", "chinarsi chinato piegarsi abbassarsi allacciare scarpe"],
+ ["pick something up", "raccogliere qualcosa", "Could you pick up the towel from the floor?", "Potresti raccogliere l'asciugamano da terra?", "Con un pronome: pick it up. Qui significa raccogliere, non passare a prendere qualcuno.", "raccogliere raccogli raccolto sollevare terra pavimento asciugamano"],
+ ["lean against", "appoggiarsi a", "Don't lean against the door. It isn't closed properly.", "Non appoggiarti alla porta. Non è chiusa bene.", "Si usa per appoggiarsi a una superficie con il corpo.", "appoggiarsi appoggiarti appoggiato schiena muro porta"],
+ ["trip over", "inciampare in", "Be careful not to trip over that cable.", "Fai attenzione a non inciampare in quel cavo.", "Non implica necessariamente una caduta.", "inciampare inciampato inciampo cavo ostacolo piede"],
+ ["put something away", "mettere via qualcosa", "Please put the tools away when you've finished.", "Per favore, metti via gli attrezzi quando hai finito.", "Rimettere qualcosa al suo posto. Con un pronome: put them away.", "mettere via riporre sistemare riordinare attrezzi posto"],
+ ["hang something up", "appendere qualcosa", "You can hang your coat up behind the door.", "Puoi appendere il cappotto dietro la porta.", "Qui si parla di appendere un indumento. Con un pronome: hang it up.", "appendere appendi appeso cappotto giacca gancio attaccapanni"],
+ ["zip something up", "chiudere qualcosa con la zip", "Zip your jacket up. It's cold outside.", "Chiudi la zip della giacca. Fuori fa freddo.", "Con un pronome: zip it up. Unzip = aprire la zip.", "chiudere chiudi zip cerniera giacca giubbotto"],
+ ["try something out", "provare qualcosa per vedere come funziona", "Let's try the new coffee machine out.", "Proviamo la nuova macchina del caffè.", "Diverso da try on, che si usa per provare un indumento. Con un pronome: try it out.", "provare prova testare collaudare funzionamento macchina caffè"],
+ ["plug something in", "attaccare la spina di qualcosa", "Could you plug the lamp in? The socket is behind the sofa.", "Potresti attaccare la spina della lampada? La presa è dietro il divano.", "Collegare alla corrente, non necessariamente accendere. Con un pronome: plug it in.", "attaccare collegare inserire spina presa corrente lampada cavo"],
+ ["turn something down", "abbassare qualcosa", "Could you turn the music down? I'm on the phone.", "Potresti abbassare la musica? Sono al telefono.", "Qui indica abbassare il volume. Con un pronome: turn it down.", "abbassare abbassa volume musica televisione audio"],
+ ["turn something up", "alzare qualcosa", "Can you turn the volume up? I can't hear the dialogue.", "Puoi alzare il volume? Non riesco a sentire il dialogo.", "Qui indica alzare il volume. Con un pronome: turn it up.", "alzare alza aumentare volume audio sentire televisione"],
+ ["wear out", "consumarsi con l'uso", "The soles of my shoes are wearing out.", "Le suole delle mie scarpe si stanno consumando.", "Qui si parla di deterioramento dovuto all'uso. wear - wore - worn.", "consumare consumarsi consumato usurare usurato scarpe suole"],
+ ["get on", "salire (su un mezzo)", "We got on the bus at the station.", "Siamo saliti sull'autobus alla stazione.", "Si usa per autobus, treni e aerei. Per l'auto si dice get in.", "salire autobus treno aereo mezzo"],
+ ["get off", "scendere (da un mezzo)", "Where do I get off for the museum?", "Dove devo scendere per il museo?", "È il contrario di get on. Per l'auto si dice get out of.", "scendere autobus treno fermata mezzo"],
+ ["fill in", "compilare", "Please fill in this form.", "Compila questo modulo, per favore.", "In inglese americano si dice anche fill out. Con un pronome: fill it in.", "compilare modulo moduli riempire"],
+ ["break down", "guastarsi (di un veicolo)", "Our car broke down on the motorway.", "La nostra macchina si è guastata in autostrada.", "Si usa per veicoli e macchinari. break - broke - broken.", "guastarsi rompersi auto macchina avaria panne"],
+ ["give back", "restituire", "I'll give it back tomorrow.", "Te lo restituisco domani.", "Con un pronome: give it back.", "restituire rendere ridare"],
+ ["bring back", "riportare indietro", "Could you bring the keys back tomorrow?", "Potresti riportare le chiavi domani?", "Con un pronome: bring them back.", "riportare riportare indietro restituire portare di nuovo chiavi"],
+ ["look out!", "attenzione!", "Look out! There's a car coming.", "Attenzione! Sta arrivando una macchina.", "Si usa per avvertire di un pericolo immediato.", "attenzione stai attento pericolo fai attenzione"],
+ ["fall over", "cadere per terra", "He tripped and fell over.", "È inciampato ed è caduto.", "fall - fell - fallen.", "cadere cadere per terra perdere equilibrio inciampare"]
 ]},
 { id:"collegare", title:"Collegare le idee", items:[
  ["because","perché","I'm staying home because I'm tired.","Resto a casa perché sono stanco."],
@@ -466,42 +557,42 @@ window.CATEGORIES = [
  ["besides","inoltre / e poi","It's too far. Besides, it's expensive.","È troppo lontano. E poi è caro."]
 ]},
 { id:"idiomi-quot", title:"Commentare E Conversare", items:[
-["Long story short, …","Per farla breve, …","Long story short, we missed the train.","Per farla breve, abbiamo perso il treno.","Si dice anche “to make a long story short”."],
-["It's a long story.","È una lunga storia.","","","Si usa per non entrare nei dettagli."],
-["Easier said than done.","Più facile a dirsi che a farsi."],
-["Better late than never.","Meglio tardi che mai."],
-["You can say that again!","Puoi dirlo forte!","It's freezing! — You can say that again!","Si gela! — Puoi dirlo forte!"],
-["Tell me about it.","Me lo dici a me! / Lo so bene.","","","Non significa “raccontamelo”: dai ragione a chi parla."],
-["I'm all ears.","Ti ascolto. / Sono tutto orecchi."],
-["Speak of the devil!","Parli del diavolo!","Speak of the devil! We were just talking about you.","Parli del diavolo! Stavamo parlando proprio di te.","Si dice quando la persona arriva proprio mentre si parla di lei."],
-["Fingers crossed.","Incrociamo le dita.","Fingers crossed for tomorrow!","Incrociamo le dita per domani!"]
+ ["Long story short, …","Per farla breve, …","Long story short, we missed the train.","Per farla breve, abbiamo perso il treno.","Si dice anche “to make a long story short”."],
+ ["It's a long story.","È una lunga storia.","","","Si usa per non entrare nei dettagli."],
+ ["Easier said than done.","Più facile a dirsi che a farsi."],
+ ["Better late than never.","Meglio tardi che mai."],
+ ["You can say that again!","Puoi dirlo forte!","It's freezing! — You can say that again!","Si gela! — Puoi dirlo forte!"],
+ ["Tell me about it.","Me lo dici a me! / Lo so bene.","","","Non significa “raccontamelo”: dai ragione a chi parla."],
+ ["I'm all ears.","Ti ascolto. / Sono tutto orecchi."],
+ ["Speak of the devil!","Parli del diavolo!","Speak of the devil! We were just talking about you.","Parli del diavolo! Stavamo parlando proprio di te.","Si dice quando la persona arriva proprio mentre si parla di lei."],
+ ["Fingers crossed.","Incrociamo le dita.","Fingers crossed for tomorrow!","Incrociamo le dita per domani!"]
 ]},
 { id:"idiomi-sit", title:"Descrivere situazioni", items:[
-["to sell like hot cakes","andare a ruba","Their new sneakers are selling like hot cakes.","Le loro nuove scarpe vanno a ruba."],
-["once in a blue moon","molto raramente","I only eat fast food once in a blue moon.","Mangio fast food molto raramente."],
-["a piece of cake","un gioco da ragazzi","The exam was a piece of cake.","L'esame era un gioco da ragazzi."],
-["to cost an arm and a leg","costare un occhio della testa","That car cost an arm and a leg.","Quell'auto è costata un occhio della testa."],
-["to be under the weather","non sentirsi in forma","I'm feeling a bit under the weather.","Non mi sento molto in forma.","Per malesseri leggeri: raffreddore, stanchezza."],
-["the last straw","la goccia che fa traboccare il vaso","When he forgot my birthday again, that was the last straw.","Quando si è dimenticato di nuovo del mio compleanno, è stata la goccia."],
-["in the middle of nowhere","in capo al mondo","Their house is in the middle of nowhere.","La loro casa è in capo al mondo."],
-["a blessing in disguise","una fortuna inaspettata","Losing that job was a blessing in disguise.","Perdere quel lavoro si è rivelato una fortuna."],
-["to get out of hand","sfuggire di mano","The party got out of hand.","La festa è sfuggita di mano."],
-["to be up in the air","essere ancora incerto","Our summer plans are still up in the air.","I nostri programmi per l'estate sono ancora incerti."]
+ ["to sell like hot cakes","andare a ruba","Their new sneakers are selling like hot cakes.","Le loro nuove scarpe vanno a ruba."],
+ ["once in a blue moon","molto raramente","I only eat fast food once in a blue moon.","Mangio fast food molto raramente."],
+ ["a piece of cake","un gioco da ragazzi","The exam was a piece of cake.","L'esame era un gioco da ragazzi."],
+ ["to cost an arm and a leg","costare un occhio della testa","That car cost an arm and a leg.","Quell'auto è costata un occhio della testa."],
+ ["to be under the weather","non sentirsi in forma","I'm feeling a bit under the weather.","Non mi sento molto in forma.","Per malesseri leggeri: raffreddore, stanchezza."],
+ ["the last straw","la goccia che fa traboccare il vaso","When he forgot my birthday again, that was the last straw.","Quando si è dimenticato di nuovo del mio compleanno, è stata la goccia."],
+ ["in the middle of nowhere","in capo al mondo","Their house is in the middle of nowhere.","La loro casa è in capo al mondo."],
+ ["a blessing in disguise","una fortuna inaspettata","Losing that job was a blessing in disguise.","Perdere quel lavoro si è rivelato una fortuna."],
+ ["to get out of hand","sfuggire di mano","The party got out of hand.","La festa è sfuggita di mano."],
+ ["to be up in the air","essere ancora incerto","Our summer plans are still up in the air.","I nostri programmi per l'estate sono ancora incerti."]
 ]},
 { id:"idiomi-azioni", title:"Parlare Di Azioni E Comportamenti", items:[
-["to break the ice","rompere il ghiaccio","He told a joke to break the ice.","Ha fatto una battuta per rompere il ghiaccio."],
-["to hit the nail on the head","centrare il punto","You hit the nail on the head.","Hai centrato il punto."],
-["to beat around the bush","girare intorno al problema","Stop beating around the bush and tell me.","Smettila di girarci intorno e dimmelo."],
-["to let the cat out of the bag","lasciarsi sfuggire un segreto","She let the cat out of the bag about the party.","Si è lasciata sfuggire il segreto sulla festa."],
-["to call it a day","chiuderla qui per oggi","It's late. Let's call it a day.","È tardi. Chiudiamola qui per oggi."],
-["to bite the bullet","stringere i denti e farlo","I hate the dentist, but I'll just bite the bullet.","Odio il dentista, ma stringerò i denti e ci andrò."],
-["to go the extra mile","fare uno sforzo in più","She always goes the extra mile for her clients.","Fa sempre uno sforzo in più per i suoi clienti."],
-["to keep an eye on","tenere d'occhio","Can you keep an eye on my bag?","Puoi tenere d'occhio la mia borsa?"],
-["to jump the gun","anticipare i tempi","Don't jump the gun. We haven't decided yet.","Non anticipare i tempi. Non abbiamo ancora deciso."],
-["to get cold feet","avere un ripensamento all'ultimo","He got cold feet before the wedding.","Ha avuto un ripensamento prima del matrimonio."],
-["to be on the same page","la pensiamo allo stesso modo","Let's make sure we're all on the same page.","Assicuriamoci di essere tutti sulla stessa lunghezza d'onda."],
-["The ball is in your court.","Tocca a te.","I've made my offer. The ball is in your court.","Ho fatto la mia offerta. Ora tocca a te."],
-["to kill two birds with one stone","prendere due piccioni con una fava","I'll post the letter on my way to work and kill two birds with one stone.","Imbuco la lettera andando al lavoro e prendo due piccioni con una fava."]
+ ["to break the ice","rompere il ghiaccio","He told a joke to break the ice.","Ha fatto una battuta per rompere il ghiaccio."],
+ ["to hit the nail on the head","centrare il punto","You hit the nail on the head.","Hai centrato il punto."],
+ ["to beat around the bush","girare intorno al problema","Stop beating around the bush and tell me.","Smettila di girarci intorno e dimmelo."],
+ ["to let the cat out of the bag","lasciarsi sfuggire un segreto","She let the cat out of the bag about the party.","Si è lasciata sfuggire il segreto sulla festa."],
+ ["to call it a day","chiuderla qui per oggi","It's late. Let's call it a day.","È tardi. Chiudiamola qui per oggi."],
+ ["to bite the bullet","stringere i denti e farlo","I hate the dentist, but I'll just bite the bullet.","Odio il dentista, ma stringerò i denti e ci andrò."],
+ ["to go the extra mile","fare uno sforzo in più","She always goes the extra mile for her clients.","Fa sempre uno sforzo in più per i suoi clienti."],
+ ["to keep an eye on","tenere d'occhio","Can you keep an eye on my bag?","Puoi tenere d'occhio la mia borsa?"],
+ ["to jump the gun","anticipare i tempi","Don't jump the gun. We haven't decided yet.","Non anticipare i tempi. Non abbiamo ancora deciso."],
+ ["to get cold feet","avere un ripensamento all'ultimo","He got cold feet before the wedding.","Ha avuto un ripensamento prima del matrimonio."],
+ ["to be on the same page","la pensiamo allo stesso modo","Let's make sure we're all on the same page.","Assicuriamoci di essere tutti sulla stessa lunghezza d'onda."],
+ ["The ball is in your court.","Tocca a te.","I've made my offer. The ball is in your court.","Ho fatto la mia offerta. Ora tocca a te."],
+ ["to kill two birds with one stone","prendere due piccioni con una fava","I'll post the letter on my way to work and kill two birds with one stone.","Imbuco la lettera andando al lavoro e prendo due piccioni con una fava."]
 ]}
 ];
 
