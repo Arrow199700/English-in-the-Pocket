@@ -251,6 +251,74 @@ mark{background:var(--mark);color:inherit;border-radius:3px;padding:0 1px}
 .bmc-link:active { transform: scale(.95); }
 
 
+/** Comportamento LOcked GUest senza accesso a Preferiti **/
+#list .fav-lock {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 380px;
+  padding: 28px 18px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--card);
+}
+
+#list .fav-lock-preview {
+  position: absolute;
+  inset: 20px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 18px;
+  filter: blur(6px);
+  opacity: .5;
+  pointer-events: none;
+}
+
+#list .fav-lock-preview > div {
+  border: 1px solid var(--muted);
+  border-radius: 16px;
+  background:
+    linear-gradient(var(--muted), var(--muted))
+      20px 22px / 55% 12px no-repeat,
+    linear-gradient(var(--muted), var(--muted))
+      20px 48px / 80% 9px no-repeat,
+    var(--soft);
+}
+
+#list .fav-lock-message {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 380px);
+  padding: 28px 22px;
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--card);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .22);
+}
+
+#list .fav-lock-message::before {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 16px;
+  background: var(--muted);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Crect x='4' y='10' width='16' height='12' rx='3'/%3E%3Cpath d='M8 10V6a4 4 0 0 1 8 0v4M12 15v3'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Crect x='4' y='10' width='16' height='12' rx='3'/%3E%3Cpath d='M8 10V6a4 4 0 0 1 8 0v4M12 15v3'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+#list .fav-lock-message p {
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
+
+
+
+
+
+
 /*** FOOTER ***/
 
 .site-foot{

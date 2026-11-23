@@ -107,6 +107,26 @@
 
   function render() {
     syncTabs();
+    if (view === "fav" && !user) {
+      statusEl.textContent = "Preferiti";
+      document.getElementById("favCount").textContent = "0";
+
+      listEl.innerHTML =
+        '<section class="fav-lock" aria-label="Preferiti bloccati">' +
+          '<div class="fav-lock-preview" aria-hidden="true">' +
+            '<div></div><div></div><div></div>' +
+          '</div>' +
+          '<div class="fav-lock-message">' +
+            '<p>È necessario registrarsi per abilitare la funzione “Preferiti ⭐”.</p>' +
+            '<button type="button" class="btn-primary" id="favLogin">' +
+              'Accedi o registrati' +
+            '</button>' +
+          '</div>' +
+        '</section>';
+
+      document.getElementById("favLogin").onclick = openLogin;
+      return;
+    }
     var searching = !!norm(query).trim();
     var html = "", total = 0;
     var sections = activeSections();
@@ -188,6 +208,10 @@
     if (e.target.closest(".star")) toggleFav(it.id);
   });
   function toggleFav(id) {
+    if (!user) {
+      setView("fav");
+      return;
+    }
     var on = !favs.has(id);
     if (on) favs.add(id); else favs.delete(id);
     saveLocal();
@@ -264,7 +288,7 @@
   var dlg = $("#loginDlg"), formEl = $("#loginForm"), emailEl = $("#loginEmail"),
       passEl = $("#loginPass"), msgEl = $("#loginMsg"), sendBtn = $("#loginSend"), mode = "in";
 
-  var ALLOW_GUEST = false;   // true = mostra "Continua senza account"
+  var ALLOW_GUEST = true;   // true = mostra "Continua senza account"
   var guest = false;
 
   var langNameEl = $("#langName"), langFlagEl = $("#langFlag"), switching = false;
@@ -468,9 +492,16 @@
   }
 
   function openLogin() {
+    guest = false;
+    document.body.classList.add("locked");
     formEl.hidden = false;
     setMode("in");
-    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+
+    if (!dlg.open) {
+      if (dlg.showModal) dlg.showModal();
+      else dlg.setAttribute("open", "");
+    }
+
     emailEl.focus();
   }
 
@@ -493,6 +524,7 @@
     if (skip) {
       skip.hidden = !ALLOW_GUEST;
       skip.addEventListener("click", function () { guest = true; gate(); });
+      
     }
     formEl.addEventListener("submit", function (e) {
       e.preventDefault();
