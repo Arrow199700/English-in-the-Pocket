@@ -120,5 +120,7 @@ Le traduzioni indicano il significato naturale nel contesto, non sempre la corri
 
 - **Sezione "Parole" (portafoglio, foglie):** idea futura, non urgente.
 
-- **Lingue multiple con le bandiere: in pausa.**
+- **Lingue multiple con le bandiere: in pausa.** parzialmente fatta ✅
+
+- **Aggiungere una lingua di partenza** per rendere internazionale l'app, da fare quando e se otterrò più sostenitori
 

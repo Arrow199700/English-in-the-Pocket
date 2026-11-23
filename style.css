@@ -165,6 +165,26 @@ details.cat{transition:transform .15s ease, box-shadow .15s ease}
 }
 details.cat>summary:hover .tile{background:color-mix(in srgb,var(--c) 24%,transparent)}
 
+.collapse-card {
+  display: block;
+  margin: 8px 16px 4px auto;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--c);
+  font: inherit;
+  font-size: .82rem;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+
+.collapse-card:hover {
+  background: color-mix(in srgb, var(--c) 26%, transparent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--c) 15%, transparent);
+
+}
+
 
 /* Titoli dei gruppi dentro una sezione: fasce ben visibili */
 .sub{

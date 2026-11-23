@@ -133,10 +133,37 @@
         ? "Nessuna preferita per ora. Tocca ☆ accanto a una frase per salvarla."
         : "Nessun risultato. Prova con un'altra parola.") + '</div>';
     }
+
     listEl.innerHTML = html;
-    statusEl.textContent = searching ? total + (total === 1 ? " risultato" : " risultati")
-      : (view === "fav" ? "" : shown + " espressioni in " + sections.length + " sezioni");
-    $("#favCount").textContent = all.filter(function (it) { return favs.has(it.id); }).length;
+
+    listEl.querySelectorAll("details.cat").forEach(function (card) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "collapse-card";
+      btn.textContent = "Riduci ∧";
+      btn.setAttribute("aria-label", "Richiudi la scheda");
+
+      btn.addEventListener("click", function () {
+        card.open = false;
+        openState[card.dataset.cat] = false;
+
+        var summary = card.querySelector("summary");
+        summary.focus({ preventScroll: true });
+
+        var header = document.querySelector(".top");
+        var offset = header ? header.getBoundingClientRect().height : 0;
+
+        window.scrollTo({
+          top: Math.max(
+            0,
+            window.scrollY + card.getBoundingClientRect().top - offset - 12
+          ),
+          behavior: "instant"
+        });
+      });
+
+      card.querySelector(".body").appendChild(btn);
+    });
   }
 
   listEl.addEventListener("toggle", function (e) {
