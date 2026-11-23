@@ -1,3 +1,4 @@
+window.LANG_DATA = window.LANG_DATA || {};
 // Ogni frase: [inglese, italiano, esempio inglese, esempio italiano, nota (facoltativa)]
 // Gli ID dei preferiti dipendono dall'id della sotto-lista e dalla posizione: aggiungi le nuove frasi in fondo.
 window.CATEGORIES = [
@@ -624,3 +625,5 @@ window.SECTIONS_PHRASAL = [
  { id:"idiomi",  icon:"🗣️", title:"Modi di dire - Idiomi",  color:"#5b6b7a", groups:["idiomi-quot","idiomi-sit","idiomi-azioni"] },
  { id:"phrasal", icon:"🧩", title:"Phrasal verbs", color:"#1f7a5c", groups:["phrasal"] }
 ];
+
+window.LANG_DATA.eng = { CATEGORIES: window.CATEGORIES, SECTIONS: window.SECTIONS, SECTIONS_PHRASAL: window.SECTIONS_PHRASAL };

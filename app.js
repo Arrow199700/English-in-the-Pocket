@@ -1,14 +1,33 @@
 (function () {
   "use strict";
   var LS_KEY = "english-in-the-pocket:fav";
-  var cats = window.CATEGORIES || [];
+  var LANGS = {
+    eng: { name: "English", label: "inglese", beta: false, flag: "bandiera_eng.svg",alt: "Bandiera inglese", prefix: "",    ph: "Cerca in italiano o in inglese", voice: /^en[-_](GB|US|AU|IE)/i, lang: "en-GB" },
+    de:  { name: "Deutsch", label: "tedesco", beta: true,  flag: "bandiera_de.svg", alt: "Bandiera tedesca", prefix: "de:", ph: "Cerca in italiano o in tedesco", voice: /^de[-_](DE|AT|CH)/i,    lang: "de-DE" }
+  };
+  var FLAG= {
+    en: { flag: "bandiera_eng.svg" },
+    de: { flag: "bandiera_de.svg" }
+  };
+  var LANG_ORDER = ["eng", "de"];
+  var DATA = window.LANG_DATA || {};
+  var curLang = "eng";
 
-  var all = [];
-  cats.forEach(function (c) {
-    c.items.forEach(function (r, i) {
-      all.push({ id: c.id + "-" + (i + 1), cat: c.id, title: c.title, en: r[0], it: r[1], ex: r[2] || "", exIt: r[3] || "", note: r[4] || "", kw: r[5] || "" });
+  var cats = [], all = [], sectionsMain = [], sectionsPhrasal = [];
+  function loadLang(code) {
+    var D = DATA[code]; if (!D) return false;
+    curLang = code;
+    cats = D.CATEGORIES || [];
+    all = [];
+    cats.forEach(function (c) {
+      c.items.forEach(function (r, i) {
+        all.push({ id: LANGS[code].prefix + c.id + "-" + (i + 1), cat: c.id, title: c.title, en: r[0], it: r[1], ex: r[2] || "", exIt: r[3] || "", note: r[4] || "", kw: r[5] || "" });
+      });
     });
-  });
+    sectionsMain = buildSections(D.SECTIONS);
+    sectionsPhrasal = buildSections(D.SECTIONS_PHRASAL);
+    return true;
+  }
 
   function buildSections(list) {
     return (list || []).map(function (s) {
@@ -66,7 +85,7 @@
     if (!q) return true;
     var tp = topicOf();
     if (tp) return it.cat.indexOf(tp) === 0;
-    var hay = it.en + " " + it.it + " " + it.ex + " " + it.exIt + it.kw;
+    var hay = it.en + " " + it.it + " " + it.ex + " " + it.exIt + " " + it.kw;
     if (q.length >= 3) hay += " " + it.title;
     return norm(hay).indexOf(q) >= 0;
   }
@@ -117,7 +136,7 @@
     listEl.innerHTML = html;
     statusEl.textContent = searching ? total + (total === 1 ? " risultato" : " risultati")
       : (view === "fav" ? "" : shown + " espressioni in " + sections.length + " sezioni");
-    $("#favCount").textContent = favs.size;
+    $("#favCount").textContent = all.filter(function (it) { return favs.has(it.id); }).length;
   }
 
   listEl.addEventListener("toggle", function (e) {
@@ -153,7 +172,7 @@
 
   var voice = null;
   function pickVoice() {
-    var vs = speechSynthesis.getVoices().filter(function (v) { return /^en[-_](GB|US|AU|IE)/i.test(v.lang); });
+    var vs = speechSynthesis.getVoices().filter(function (v) { return LANGS[curLang].voice.test(v.lang); });
     var rank = function (v) { return /premium|enhanced|natural|neural|siri/i.test(v.name) ? 0 : /google/i.test(v.name) ? 1 : 2; };
     vs.sort(function (a, b) { return rank(a) - rank(b); });
     voice = vs[0] || null;
@@ -165,7 +184,7 @@
       speechSynthesis.cancel();
       var u = new SpeechSynthesisUtterance(text);
       if (voice) u.voice = voice;
-      u.lang = voice ? voice.lang : "en-GB";
+      u.lang = voice ? voice.lang : LANGS[curLang].lang;
       u.rate = 0.9;
       speechSynthesis.speak(u);
     } catch (e) {}
@@ -220,6 +239,37 @@
 
   var ALLOW_GUEST = false;   // true = mostra "Continua senza account"
   var guest = false;
+
+  var langNameEl = $("#langName"), langFlagEl = $("#langFlag"), switching = false;
+
+  function applyLangUI() {
+    var L = LANGS[curLang];
+    langNameEl.textContent = L.name;
+    langFlagEl.src = L.flag; langFlagEl.alt = L.alt;
+    document.title = L.name + " in the Pocket";
+    qEl.placeholder = L.ph;
+  }
+  function setLang(code) {
+    if (!loadLang(code)) return;
+    openState = {};
+    if (canSpeak) pickVoice();
+    applyLangUI();
+    render();
+  }
+  function switchLang(code) {
+    if (switching || code === curLang || !DATA[code]) return;
+    switching = true;
+    setLang(code);
+    drawAuth();
+    formEl.hidden = true;
+    document.body.classList.add("locked");
+    dlg.showModal();
+    enterApp();
+    setTimeout(function () { switching = false; }, 3200);
+  }
+  document.addEventListener("click", function () {
+    var m = document.getElementById("acctMenu"); if (m) m.hidden = true;
+  });
 
   function isLocked() { return document.body.classList.contains("locked"); }
 
@@ -359,8 +409,19 @@
     authEl.hidden = false;
     if (user) {
       var initial = (user.email || "?").charAt(0).toUpperCase();
-      authEl.innerHTML = '<button id="out" class="btn-login" title="' + esc(user.email || "") + '"><span class="av">' + esc(initial) + '</span>Esci</button>';
-      $("#out").onclick = function () { sb.auth.signOut(); };
+      var items = LANG_ORDER.filter(function (c) { return c !== curLang && DATA[c]; }).map(function (c) {
+        return '<button type="button" data-lang="' + c + '">' + '<img class="flag" src="' + LANGS[c].flag + '" alt="" style="width:1.3em;height:.9em;object-fit:cover;border-radius:2px;margin-right:6px;vertical-align:-1px"> '
+         + LANGS[c].name + ' in the Pocket' + (LANGS[c].beta ? " BETA" : "") + '</button>';
+        }).join("");
+      authEl.innerHTML = '<button id="acct" class="btn-login" aria-haspopup="menu" title="' + esc(user.email || "") + '"><span class="av">' + esc(initial) + '</span>Menu ▾</button>' +
+        '<div id="acctMenu" class="acct-menu" hidden>' + items + '<button type="button" id="menuOut">🚪 Esci</button></div>';
+      $("#acct").onclick = function (e) { e.stopPropagation(); var m = $("#acctMenu"); m.hidden = !m.hidden; };
+      $("#acctMenu").onclick = function (e) {
+        var b = e.target.closest("button"); if (!b) return;
+        $("#acctMenu").hidden = true;
+        if (b.id === "menuOut") sb.auth.signOut();
+        else if (b.dataset.lang) switchLang(b.dataset.lang);
+      };
     } else {
       authEl.innerHTML = '<button id="in" class="btn-login">Login</button>';
       $("#in").onclick = openLogin;
@@ -380,6 +441,7 @@
   }
 
   function openLogin() {
+    formEl.hidden = false;
     setMode("in");
     if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
     emailEl.focus();
@@ -456,12 +518,14 @@
       });
       sb.auth.onAuthStateChange(function (event, session) {
         user = session ? session.user : null;
-        if (event === "SIGNED_OUT") { favs.clear(); saveLocal(); render(); }
+        if (event === "SIGNED_OUT") { favs.clear(); saveLocal(); setLang("eng"); }
         drawAuth(); syncRemote(); gate();
       });
     };
     document.head.appendChild(s);
   }
+  loadLang("eng");
+  applyLangUI();
   render();
   initAuth();
 })();
