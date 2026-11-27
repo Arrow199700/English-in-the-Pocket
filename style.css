@@ -228,12 +228,13 @@ mark{background:var(--mark);color:inherit;border-radius:3px;padding:0 1px}
 
 
 /* ===== Menu account: cambio lingua / Esci ===== */
-.auth{position:relative}
+.auth{position:relative;flex-shrink:0}
 .acct-menu{position:absolute;right:0;top:calc(100% + 6px);min-width:210px;padding:6px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 30px rgba(20,60,120,.18);z-index:20}
 .acct-menu[hidden]{display:none}
 .acct-menu button{display:block;width:100%;padding:10px 12px;border:0;border-radius:10px;background:none;font:inherit;text-align:left;cursor:pointer}
 .acct-menu button:hover{background:var(--soft)}
-
+.auth .btn-login{display:inline-flex;align-items:center;justify-content:center;flex-wrap:nowrap;white-space:nowrap;width:max-content;min-width:max-content}
+.auth .btn-login>*{flex-shrink:0}
 
 /*Support me - Buy me a coffee*/
 
